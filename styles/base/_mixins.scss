@@ -1,6 +1,5 @@
 
 @mixin font-primary-bold($font-size, $line-height, $letter-spacing){
-  font-family: $font-primary;
   font-weight: 600;
   font-size: $font-size;
   line-height: $line-height;

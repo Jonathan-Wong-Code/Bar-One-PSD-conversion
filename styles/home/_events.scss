@@ -1,0 +1,38 @@
+.events {
+  padding: 6rem 0 6rem 0;
+  background-color: $color-black;
+  
+  &__wrapper{
+    display:flex;
+    align-items:flex-start;
+  }
+
+  &__heading {
+    @include font-primary-bold(3.4rem, .85, 2.2px);
+    color: $color-orange;
+    margin:0;
+  }
+
+  &__left{
+    width:25%;
+    margin-right:6rem;
+  }
+
+  &__right{
+    width:75%;
+  }
+
+  &__text{
+    margin-top:1rem;
+    margin-bottom:2rem;
+  }
+
+  &__img {
+    width:100%;
+    transform:scale(.92);
+    display:block;
+    box-shadow: $box-shadow-left;  
+  }
+
+  
+}

@@ -64,10 +64,15 @@
   }
 
   &__link {
-    @include font-primary-bold(1.9rem, 1.45, 1.9px);
+    @include font-primary-bold(1.9rem, .76, 1.9px);
     text-transform: uppercase;
     color:inherit; 
     display:block;
+
+    &--center{
+      font-family: $font-secondary;
+      font-size: 2.5rem;
+    }
   }
 
   &__link:hover {
