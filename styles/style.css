@@ -223,7 +223,7 @@ a {
     font-size: 4.16rem;
     font-family: "Chathura", sans-serif;
     letter-spacing: 2.6px;
-    line-height: 94.7px;
+    line-height: .65;
     -ms-grid-row: 1;
     grid-row: 1/1;
     -ms-grid-column: 1;
@@ -239,10 +239,9 @@ a {
     z-index: 2; }
     .header__heading--large {
       font-family: "Tulpen One", sans-serif;
-      margin-bottom: 1rem;
-      color: #ff8327;
       font-size: 13.07rem;
       font-weight: 300;
+      color: #ff8327;
       display: block;
       margin-left: -7px; }
   .header__img {
@@ -267,7 +266,7 @@ a {
   grid-row: 1/1;
   -ms-grid-column: 1;
   grid-column: 1/1;
-  width: 40%;
+  width: 45%;
   margin-top: 3%;
   -ms-grid-column-align: center;
   justify-self: center; }
@@ -275,6 +274,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center; }
   .header-nav__item {
     width: 20%; }
@@ -284,14 +286,19 @@ a {
     line-height: 0.76;
     letter-spacing: 1.9px;
     text-transform: uppercase;
-    color: inherit;
-    display: block; }
-    .header-nav__link--center {
-      font-family: "Tulpen One", sans-serif;
-      font-size: 2.5rem; }
-  .header-nav__link:hover {
-    color: #ff8327;
-    border: 1px solid #ff8327; }
+    display: block;
+    padding: .5rem 0;
+    letter-spacing: 1.9px;
+    color: inherit; }
+  .header-nav__logo {
+    font-family: "Tulpen One", sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: currentColor;
+    padding: .5rem 1rem;
+    letter-spacing: 1.9px; }
+  .header-nav__link:hover, .header-nav__logo:hover {
+    color: #ff8327; }
 
 .features {
   background-color: #111010;
@@ -450,3 +457,26 @@ a {
     display: block;
     -webkit-box-shadow: -20px 20px 0px 3px #ff8327;
     box-shadow: -20px 20px 0px 3px #ff8327; }
+
+.gallery {
+  background-color: #220303;
+  padding: 6rem 0; }
+  .gallery__images {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .gallery__img-box {
+    width: 33%; }
+    .gallery__img-box:not(:last-child) {
+      margin-right: 2.5rem; }
+  .gallery__img {
+    width: 100%;
+    display: block; }
+
+.footer {
+  padding: .5rem 0;
+  background: #2c2c2c;
+  text-align: center; }
+  .footer__copyright {
+    margin: 0; }

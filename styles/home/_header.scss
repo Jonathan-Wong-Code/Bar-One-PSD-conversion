@@ -11,7 +11,7 @@
       font-size: 4.16rem;
       font-family:$font-primary;
       letter-spacing: 2.6px;
-      line-height:94.7px;
+      line-height:.65;
       grid-row: 1/1;
       grid-column: 1/1;
       margin:0;
@@ -22,16 +22,15 @@
   
       &--large{
         font-family: $font-secondary;
-        margin-bottom:1rem;
-        color: $color-orange;
         font-size: 13.07rem;
         font-weight:300;
+        color: $color-orange;
         display:block;
         margin-left:-7px;
       }
     }  
 
-    &__img{
+    &__img-box {
       grid-row: 1/1;
       grid-column: 1/1;
       width:50%;
@@ -41,7 +40,7 @@
       align-self:end;  
     }
 
-    &__img img{
+    &__img {
       display:block;
       width:100%;
     }
@@ -50,12 +49,13 @@
 .header-nav {
   grid-row: 1/1;
   grid-column: 1/1;
-  width:40%;
+  width:45%;
   margin-top:3%;
   justify-self: center;
 
   &__navigation {
     display:flex;
+    align-items: center;
     text-align: center;
   }
 
@@ -66,18 +66,23 @@
   &__link {
     @include font-primary-bold(1.9rem, .76, 1.9px);
     text-transform: uppercase;
-    color:inherit; 
     display:block;
-
-    &--center{
-      font-family: $font-secondary;
-      font-size: 2.5rem;
-    }
+    padding: .5rem 0;
+    letter-spacing: 1.9px;
+    color: inherit;
   }
 
-  &__link:hover {
+  &__logo {
+    font-family: $font-secondary;
+    font-size: 3rem;
+    font-weight: 300;
+    color: currentColor;
+    padding: .5rem 1rem;
+    letter-spacing: 1.9px;
+  }
+
+  &__link:hover, &__logo:hover {
     color:$color-orange;
-    border:1px solid $color-orange;
   }
 }
 

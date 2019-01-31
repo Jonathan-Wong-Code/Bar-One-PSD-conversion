@@ -1,0 +1,21 @@
+.gallery {
+  background-color: $color-red-dark;
+  padding:6rem 0;
+
+  &__images{
+    width:100%;
+    display:flex;
+  }
+
+  &__img-box {
+    width:33%;
+
+    &:not(:last-child){
+      margin-right:2.5rem;
+    }
+  }
+  &__img{
+    width:100%;
+    display:block;
+  }
+}
