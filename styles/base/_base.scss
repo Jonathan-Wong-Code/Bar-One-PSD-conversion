@@ -1,0 +1,26 @@
+html {
+  font-size: 125%;
+}
+
+body{
+  font-size: 1.95rem;
+  font-family: $font-primary;
+  line-height: 1;
+  letter-spacing: 1.9px;
+  color:$color-white;
+}
+
+.wrapper {
+  max-width:1400px;
+  margin:0 auto;
+}
+
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration:none;
+}

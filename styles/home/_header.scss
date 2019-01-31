@@ -1,0 +1,77 @@
+.header{
+    background-image: url(../images/home-image-1.jpg);
+    background-size:cover;
+    background-position:center;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:90vh;
+    
+    
+    &__heading {
+      font-family:$font-primary;
+      letter-spacing: 2.4px;
+      grid-row: 1/1;
+      grid-column: 1/1;
+      margin:0;
+      justify-self: center;
+      align-self: end;
+      transform:translateY(-25%);
+      z-index:2;
+  
+      &--large{
+        font-family: $font-header-main;
+        color: $color-orange;
+        font-size: 13.07rem;
+        font-weight:300;
+        display:block;
+        line-height:.5;
+        margin-left:-7px;
+      }
+    }  
+
+    &__img{
+      grid-row: 1/1;
+      grid-column: 1/1;
+      width:50%;
+      
+      transform:translateY(25%);
+      justify-self:end;
+      align-self:end;  
+    }
+
+    &__img img{
+      display:block;
+      width:100%;
+    }
+}
+
+.header-nav {
+  grid-row: 1/1;
+  grid-column: 1/1;
+  width:40%;
+  margin-top:3%;
+  justify-self: center;
+
+  &__navigation {
+    display:flex;
+    text-align: center;
+  }
+
+  &__item{
+    width:20%;
+  }
+
+  &__link {
+    @include font-primary-bold(1.9rem, 1.45, 1.9px);
+    text-transform: uppercase;
+    color:inherit; 
+    display:block;
+  }
+
+  &__link:hover {
+    color:$color-orange;
+    border:1px solid $color-orange;
+  }
+}
+
+
