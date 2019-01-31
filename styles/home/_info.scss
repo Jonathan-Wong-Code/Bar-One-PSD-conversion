@@ -1,34 +1,37 @@
 .info {
-  background-color: #220303;
-  display:grid;
+  background-color: $color-red-dark;
+  display: grid;
   grid-template-columns:[full-start]1fr [middle-start]repeat(10, [col-start] minmax(min-content, 7rem)[col-end])[middle-end] 1fr[full-end];
-  grid-template-rows: repeat(2, min-content);
+  // grid-template-rows: repeat(2, min-content);
   align-items:center;
-  &__header{
+
+  &__header {
+    @include font-primary-bold(3.4rem, 58px, 2.2px);
     margin:0;
   }
 
-  &__text{
-    margin:0;
+  &__text {
+    margin-top:0;
+    margin-bottom:2rem;
+    text-align:left;
   }
 
-  &__image--1{
+  &__image-box--1{
     grid-column: full-start/col-end 4;
     transform: translateY(-10%); 
   }
 
   &__plan {
     grid-column: col-start 7/ middle-end; 
-    
   }
 
   &__locations {
     grid-column: middle-start /col-end 4;
     grid-row:2/3;
-   
+    text-align: right;
   }
 
-  &__image--2{
+  &__image-box--2{
     grid-column: col-start 7/ full-end;
     transform: translateY(10%);
   }
@@ -44,7 +47,5 @@
     &--2 {
       box-shadow: $box-shadow-left;
     }
-  }
-
-  
+  } 
 }
