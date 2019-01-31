@@ -8,8 +8,61 @@
   <link href="https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <title>Bar-One Blog</title>
+  <style>
+    main {
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      background-color:black;
+    }
+    
+
+    .blog-post {
+      background-color:red;
+      grid-column: 6 / -1;
+    }
+  </style>
 </head>
-<body>
-  
+<body> 
+  <!-- HEADER START -->
+  <header class="header header--blog">
+    <nav class="header-nav">
+        <ul class="header-nav__navigation">
+          <li class="header-nav__item"><a href="index.html" class="header-nav__link">Home</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
+          <li class="header-nav__item"><a href="index.html" class="header-nav__logo">Bar-One</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Blog</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="header__heading--blog">Blog</h1>
+  </header>
+  <!-- HEADER END -->
+  <!-- MAIN START -->
+  <main>
+    <aside class="mission">
+      <div class="mission__img-box">
+        <img src="images/sidebar-image.jpg" alt="A hand holding an almost full beer under a tap." class="mission__img">
+      </div>
+      <div class="mission__content">
+        <h2 class="mission__heading">Our mission</h2>
+        <p class="mission__text">Nam dopibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum
+          <a href="#" class="mission__link">Find out more.</a>
+        </p>
+
+        <h2 class="mission__heading">Recent Posts</h2>
+        <ul class="mission__post-list">
+          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
+          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
+          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
+          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="blog-post">
+        blog post section
+    </section>
+  </main>
 </body>
 </html>

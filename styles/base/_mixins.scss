@@ -5,3 +5,11 @@
   line-height: $line-height;
   letter-spacing: $letter-spacing;
 }
+
+@mixin heading-chathura {
+      font-size: 6rem;
+      letter-spacing: 2.6px;
+      line-height:.65;
+      grid-row: 1/1;
+      grid-column: 1/1;
+}

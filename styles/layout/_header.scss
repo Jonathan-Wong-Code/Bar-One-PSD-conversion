@@ -1,12 +1,16 @@
 .header{
-    background-image: url(../images/home-image-1.jpg);
-    background-size:cover;
-    background-position:center;
+    
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows:90vh;
-    
-    
+   
+    /** HEADER HOME STYLES **/
+    &--home {
+      background-image: url(../images/home-image-1.jpg);
+      background-size:cover;
+      background-position:center;
+    }
+
     &__heading {
       font-size: 4.16rem;
       font-family:$font-primary;
@@ -34,7 +38,6 @@
       grid-row: 1/1;
       grid-column: 1/1;
       width:50%;
-      
       transform:translateY(25%);
       justify-self:end;
       align-self:end;  
@@ -44,8 +47,23 @@
       display:block;
       width:100%;
     }
+
+    /*** HEADER BLOG STLYES ***/
+
+    &--blog {
+      height:80vh; 
+      background-image: url(../images/blog-header-1.jpg);
+      background-size:cover;
+    }
+
+    &__heading--blog {
+      @include heading-chathura;
+      align-self: center;
+      transform: translateX(10%);
+    }
 }
 
+/* HEADER NAV FOR ALL THREE PAGES */
 .header-nav {
   grid-row: 1/1;
   grid-column: 1/1;
