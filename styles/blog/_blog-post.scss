@@ -1,0 +1,40 @@
+.blog-post {
+  margin-left: 10%;
+  margin-bottom: 4rem;
+  margin-top: -20%;
+
+  grid-column: 5 / -1;
+  
+  &__img-box { 
+    position: relative;
+    left: 32px;
+  }
+
+  &__img {
+    width: calc(100% - 32px);
+    box-shadow: -37px 37px 0px -5px $color-orange;
+    object-fit: cover;
+  }
+
+  &__post {
+    border-left: 5px solid $color-orange;
+    border-bottom: 5px solid $color-orange;
+    padding: 6rem 15%;
+  }
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__date {
+    color: $color-orange;
+    font-size: 1.75rem;
+    margin-top:.5rem;
+  }
+
+  &__text {
+    &:last-child {
+      margin-bottom :0;
+    }
+  }
+}

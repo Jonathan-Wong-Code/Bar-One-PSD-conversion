@@ -8,19 +8,6 @@
   <link href="https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <title>Bar-One Blog</title>
-  <style>
-    main {
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      background-color:black;
-    }
-    
-
-    .blog-post {
-      background-color:red;
-      grid-column: 6 / -1;
-    }
-  </style>
 </head>
 <body> 
   <!-- HEADER START -->
@@ -31,7 +18,7 @@
           <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
           <li class="header-nav__item"><a href="index.html" class="header-nav__logo">Bar-One</a></li>
           <li class="header-nav__item"><a href="#" class="header-nav__link">Blog</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
+          <li class="header-nav__item"><a href="contact.html" class="header-nav__link">Contact</a></li>
         </ul>
     </nav>
 
@@ -40,29 +27,120 @@
   <!-- HEADER END -->
   <!-- MAIN START -->
   <main>
-    <aside class="mission">
-      <div class="mission__img-box">
-        <img src="images/sidebar-image.jpg" alt="A hand holding an almost full beer under a tap." class="mission__img">
-      </div>
-      <div class="mission__content">
-        <h2 class="mission__heading">Our mission</h2>
-        <p class="mission__text">Nam dopibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum
-          <a href="#" class="mission__link">Find out more.</a>
-        </p>
+    <div class="blog-grid-container">
 
-        <h2 class="mission__heading">Recent Posts</h2>
-        <ul class="mission__post-list">
-          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
-          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
-          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
-          <li class="mission__post"><a href="" class="mission__post-link">Donic facilisis tortor ut</a></li>
-        </ul>
-      </div>
-    </aside>
+      <aside class="mission">
+        <div class="mission__img-box">
+          <img src="images/sidebar-image.jpg" 
+            alt="A hand holding an almost full beer under a tap."
+            class="mission__img">
+        </div>
 
-    <section class="blog-post">
-        blog post section
-    </section>
+        <div class="mission__content">
+          <h2 class="mission__heading">Our mission</h2>
+          <p class="mission__text">
+              Nam dopibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum 
+              <a href="#" class="mission__link">Find out more.</a>
+          </p>
+          <h2 class="mission__heading">Recent Posts</h2>
+
+          <ul class="mission__post-list">
+              <li class="mission__post">
+                <a href="" class="mission__post-link">Donic facilisis tortor ut</a>
+              </li>
+              
+              <li class="mission__post">
+                <a href="" class="mission__post-link">Augue Lacinia at Vivera</a>
+              </li>
+
+              <li class="mission__post">
+                <a href="" class="mission__post-link">Semper sed sapien metus</a>
+              </li>
+
+              <li class="mission__post">
+                <a href="" class="mission__post-link">Scelerisque nec pharetra id</a>
+              </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="blog-post">
+          <div class="blog-post__img-box">
+            <img src="images/post-image.jpg" alt="In focus is a leafy vegetable dish flanked by a pair of dishes both containing a piece of toasted artisan body with vegetables on top being served on an elevated dish" class="blog-post__img">
+          </div>
+
+          <article class="blog-post__post">
+            <h2 class="blog-post__heading"> New Menu!</h2>
+            <p class="blog-post__date">Monday January 30, 2019 by Saron</p>
+            <p class="blog-post__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam,  deleniti sint eius tenetur at dolore possimus nobis debitis corporis repellendus nam ex hic  labore omnis officiis molestias placeat obcaecati dolores provident necessitatibus beatae!</p>
+            <p class="blog-post__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa saepe vitae quibusdam repellat deserunt dignissimos voluptates doloremque aliquam pariatur eveniet veritatis corporis, architecto sequi ex ea molestias praesentium inventore expedita iste, dicta voluptatum repudiandae in reiciendis quia. Qui, aperiam cumque. Libero dignissimos aut accusantium unde.</p>
+            <p class="blog-post__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut ab saepe, laudantium amet maiores voluptatum expedita vero nostrum aperiam autem minima perferendis. Dignissimos, doloribus? Dolor repellat eveniet maiores perspiciatis quae, debitis aut unde? Nulla eveniet aut illum corrupti officia nobis odio numquam quod blanditiis et optio quidem, placeat veniam, consequuntur est vitae ducimus nemo, laboriosam id sapiente modi deserunt quaerat reiciendis. Nisi, dolor velit.</p>
+            <p class="blog-post__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, consequuntur. Optio at asperiores alias libero modi fugit, in, ipsum velit, explicabo minus id.</p>
+          </article>
+
+          <section class="comments">
+            <!-- Container for Comments Section -->
+            <div class="comments__content">
+              <h2 class="comments__heading">Comments: </h2>
+              
+              <div class="comment">
+                  <div class="comment__img-box">
+                    <img src="images/comment-image-1.jpg" 
+                      alt="A comment headshot of a young african woman from the shoulders up wearing a white dress." 
+                      class="comment__img">
+                  </div>
+                  <div class="comment__comment-box">
+                    <p class="comment__date">Tuesday October 9th, 2019 by Sulaire</p>
+                    <p class="comment__comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat iure molestias tempora, voluptate vero inventore laborum doloribus nobis natus hic odit facilis optio nihil, magni architecto? Neque assumenda accusantium incidunt unde odio.</p>
+                  </div>
+              </div>
+
+              <div class="comment">
+                  <div class="comment__img-box">
+                    <img src="images/comment-image-2.jpg" 
+                      alt="A comment headshot of a man with a scraggy brown beard running his hand through his hair." 
+                      class="comment__img">     
+                  </div>
+                  <div class="comment__comment-box">
+                    <p class="comment__date">Tuesday October 9th, 2019 by Sulaire</p>
+                    <p class="comment__comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat iure molestias tempora, voluptate vero inventore laborum doloribus nobis natus hic odit facilis optio nihil, magni architecto? Neque assumenda accusantium incidunt unde odio.</p>
+                  </div>
+              </div>
+            </div>
+            
+            <!-- FORM START -->
+            <form action="#" method="POST" class="comment-form">
+              <div class="comment-form__cell">
+                  <label for="comment-name" class="comment-form__label">Name</label>
+                  <input type="input" class="comment-form__input" name="comment-name" id="comment-name">
+              </div>
+
+              <div class="comment-form__cell">
+                  <label for="comment-email"  class="comment-form__label">Email address</label>
+                  <input type="email" class="comment-form__input" name="comment-email" id="comment-email">
+              </div>   
+
+              <textarea name="" id="" cols="20" rows="3" class="comment-form__comment">Comment</textarea>
+              <input type="submit" class="btn comment-form__submit" value="Post Comment">
+            </form>
+          </section>
+      </section>
+    </div>
   </main>
+  <!-- END MAIN -->
+  <!-- FOOTER START -->
+  <footer class="footer">
+    <p class="footer__copyright">Copyright &copy; 2019 HackerYou</p>
+  </footer>
+  <!-- FOOTER END -->
 </body>
 </html>
+
+<!-- Questions  -->
+
+<!-- sections in section ? YES-->
+<!-- Sass responsive manager?  YES-->
+<!-- Big lettering Waiting for answer-->
+<!-- Where to put main styles for blog  need answer -->
+<!-- should form bein a div? Noe its fine-->
+<!-- Where to wrap grid parent its...div? section in section?  In a wrapper div-->

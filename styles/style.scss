@@ -5,10 +5,15 @@
 @import "base/utilities";
 @import "layout/footer";
 @import "layout/header";
+@import "layout/blog";
+@import "layout/contact";
 @import "home/features";
 @import "home/info";
-@import "home/beachstays";
+@import "home/party";
 @import "home/banner";
 @import "home/events";
 @import "home/gallery";
 @import "blog/mission";
+@import "blog/blog-post";
+@import "blog/comments";
+@import "contact/contact";

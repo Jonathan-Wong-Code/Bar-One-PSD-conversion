@@ -1,9 +1,9 @@
 .info {
-  background-color: $color-red-dark;
+ 
   display: grid;
   grid-template-columns:[full-start]1fr [middle-start]repeat(10, [col-start] minmax(min-content, 7rem)[col-end])[middle-end] 1fr[full-end];
-  // grid-template-rows: repeat(2, min-content);
   align-items:center;
+  background-color: $color-red-dark;
 
   &__header {
     @include font-primary-bold(3.4rem, .85, 2.2px);
