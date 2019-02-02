@@ -4,7 +4,7 @@
   width:30%;
   display:flex;
   align-items:center;
-
+  
   @include respond(medium){
     order:1;
     width:100%;
@@ -14,8 +14,10 @@
     align-items:start;
   }
 
-  
-  
+  @include respond(small2){
+    margin-left:0;
+  }
+
   &__info {
     margin-bottom: 15%;
 
@@ -28,6 +30,11 @@
     @include respond(medium2){
       flex-direction: row;
       width:100%;
+    }
+
+    @include respond(small2){
+      flex-direction:column;
+      align-items: center;
     }
   }
 
@@ -43,7 +50,10 @@
       flex-direction: column;
       width:40%;
     }
-    
+
+    @include respond(small2){
+      width:100%;
+    }  
   }
 
   &__bottom-box{
@@ -55,14 +65,19 @@
     @include respond(medium2){
       flex-direction: column;
       align-items: start;
-     
       width:60%;
+    }
+
+    @include respond(small2){
+      width:100%;
+      align-items: center;
     }
    
   }
 
   &__icon-box {
     display:flex;
+
     @include respond(medium2){
       margin-bottom:.5rem;
     }
@@ -134,6 +149,15 @@
     margin:0 auto;
     border:5px solid $color-white;
     transform: translateY(-5%);
+  }
+
+  @include respond(small2){
+    padding:2rem 1rem;
+    width:100%;
+    border:none;
+    transform:translate(0);
+    border-bottom:1px dashed $color-white;
+    border-top:1px dashed $color-white;
   }
   
 

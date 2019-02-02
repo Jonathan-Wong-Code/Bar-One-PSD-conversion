@@ -4,6 +4,10 @@
   letter-spacing:2.6px;
   line-height:.65;
   font-weight:600;
+
+  @include respond(small2){
+    font-size:5.5rem;
+  }
 }
 
 .heading-2{
@@ -34,6 +38,7 @@
   grid-column-gap:5%;
   @include respond(medium2){
     grid-template-columns: 1fr;
+    grid-column-gap:0;
   }
   &__label {
     padding-left: 5.5%;

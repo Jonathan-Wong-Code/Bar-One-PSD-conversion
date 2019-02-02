@@ -71,6 +71,10 @@
       text-align: center;
     }
 
+    @include respond(small2){
+      padding:2rem 1rem;
+    }
+
     
   }
 
@@ -100,6 +104,10 @@
     @include respond(medium2){
       width:80%;
     }
+
+    @include respond(small2){
+      width:100%;
+    }
   }
 
   &__link {
@@ -115,11 +123,18 @@
      text-align:center;   
      width:100%; 
     }
+
+    @include respond(small2){
+      padding:0;
+    }
   }
 
   &__post-link {
     color: $color-white;
     font-size: 1.95rem;
     padding-left: .6rem;
+    @include respond(larger){
+      font-size:1.8rem;
+    }
   }
 }

@@ -10,6 +10,10 @@
     padding:5rem 2rem;
   }
 
+  @include respond(small2){
+    padding: 3rem 1rem;
+  }
+
   &__heading {
     color: $color-orange;
     margin: 0;
@@ -18,7 +22,7 @@
   &__text {
     width:70%;
     margin:1rem auto 2rem auto;
-    
+
     @include respond(medium){
       width:100%;
     }

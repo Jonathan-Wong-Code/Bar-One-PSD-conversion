@@ -1,7 +1,7 @@
 .blog-post {
   margin-left: 10%;
   margin-bottom: 4rem;
-  margin-top: -20%;
+  margin-top: -15%;
 
   grid-column: 5 / -1;
   
@@ -17,8 +17,7 @@
   }
 
   &__img-box { 
-    position: relative;
-    left: 32px;
+    margin-left:32px;
 
     @include respond(large){
       left:0;
@@ -28,7 +27,7 @@
   }
 
   &__img {
-    width: calc(100% - 32px);
+    width: 100%;
     box-shadow: -37px 37px 0px -5px $color-orange;
     object-fit: cover;
     display:block;

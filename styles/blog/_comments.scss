@@ -24,23 +24,26 @@
 
 .comment{
   display: flex;
+
   @include respond(small){
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   &__img-box {
    flex-basis: 14%;
    transform: translateY(8px);
-   @include respond(medium2){
-     flex-basis:20%;
-   }
 
-   @include respond(small){
-    width:20%;
-    transform:translateY(0);
-    margin-bottom:1rem;
-  }
+    @include respond(medium2){
+      flex-basis:20%;
+    }
+
+    @include respond(small){
+      width:20%;
+      transform:translateY(0);
+      margin-bottom:1rem;
+    }
   }
 
   &__img {
@@ -67,6 +70,7 @@
     margin-bottom: .5rem;
     color: $color-orange;
     font-size: 2.5rem;
+
     @include respond(medium2){
       font-size:2.3rem;
     }
@@ -75,12 +79,19 @@
   &__comment {
    margin: 0;
    margin-bottom: 5rem;
+
    @include respond(larger){
     &:last-child{
       margin-bottom:3rem;
     }
    }
-   
+  }
+}
+
+.comment-form{
+  @include respond(small2){
+    border-top:1px dashed $color-white;
+  
   }
 }
 

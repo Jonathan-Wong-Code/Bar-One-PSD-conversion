@@ -1,9 +1,13 @@
 .events {
-  padding: 6rem 0 6rem 0;
+  padding: 6rem 0;
   background-color: $color-black;
   
   @include respond(larger){
     padding:6rem 2rem
+  }
+
+  @include respond(small2){
+    padding: 4rem 1rem;
   }
 
   &__wrapper{
@@ -33,6 +37,10 @@
     @include respond(medium){
       width:50%;
       margin:0 0 2rem 0;
+    }
+
+    @include respond(small2){
+      width:70%;
     }
   }
 

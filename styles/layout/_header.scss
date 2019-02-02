@@ -33,6 +33,10 @@
         transform:translate(0);
       }
 
+      @include respond(small2){
+        font-size:4rem;
+      }
+
       &--large{
         font-family: $font-secondary;
         font-size: 13.07rem;
@@ -41,6 +45,10 @@
         color: $color-orange;
         display:block;
         margin-left:-7px;
+
+        @include respond(small2){
+          font-size:10.5rem;
+        }
       }
     }  
 
@@ -74,7 +82,9 @@
       grid-row: 1/1;
       grid-column: 1/1;
       align-self: center;
-      transform: translate(10%,40%);  
+      transform: translateY(40%);  
+      margin-left:10%;
+      display:inline-block;
     }
 
     /*** HEADER CONTACT STYLES ***/
@@ -89,7 +99,13 @@
       grid-row: 1/1;
       grid-column: 1/1;
       align-self: center;
-      transform: translateX(10%)
+      margin-left:10%;
+      
+
+      @include respond(medium){
+        margin:0;
+        justify-self: center;
+      }
     }
 }
 
