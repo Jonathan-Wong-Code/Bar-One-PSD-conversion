@@ -1,8 +1,11 @@
 .comments {
   padding: 1rem 10%;
 
+  @include respond(largest){
+    padding: 1rem 5%;
+  }
   &__content {
-    padding: 0 5%;
+    padding: 0 2rem;
   }
   &__heading {
     @include font-primary-bold(3.4rem, .85, 2.2px);
@@ -38,56 +41,12 @@
   &__comment {
    margin: 0;
    margin-bottom: 5rem;
+   @include respond(larger){
+    &:last-child{
+      margin-bottom:3rem;
+    }
+   }
+   
   }
 }
 
-.comment-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 2.5rem;
-
-  &__cell{
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-
-  &__label {
-    padding-left: 5.5%;
-    display: block
-  }
-
-  &__input{
-    background: none;
-    border:none;
-    border-bottom: 1px solid $color-orange;
-    color: $color-white;
-  }
-
-  &__input:focus-within {
-    background-color: lighten($color-black, 10);
-    border: 1px solid $color-white;
-  }
-
-  &__comment {
-    grid-column: 1/-1;
-    background: none;
-    border: 1px solid $color-orange;
-    color: $color-white;
-    padding: 1rem 2rem;
-  }
-
-  &__comment:focus-within{
-    background-color: lighten($color-black, 10);
-    border: 1px solid $color-white;
-  }
-
-  &__submit {
-    grid-column: 1/-1;
-  }
-
-  &__submit:focus {
-    border: 1px solid $color-white;
-    background-color: $color-red-dark;
-  }
-}

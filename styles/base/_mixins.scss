@@ -10,6 +10,35 @@
       font-size: 6rem;
       letter-spacing: 2.6px;
       line-height:.65;
-      grid-row: 1/1;
-      grid-column: 1/1;
+     
+}
+
+@mixin respond($breakpoint){
+	@if $breakpoint==largest { 
+		@media only screen and  (max-width:101.25em){@content}; // 1620px /16px = 101.25em
+	}
+	
+	@if $breakpoint==larger{
+		@media only screen and  (max-width:87.5em){@content}; // 1400px/16px = 87.5em
+	}
+	
+	@if $breakpoint==large{
+		@media only screen and  (max-width:72.5em){@content}; // 1160/16px = 72.5emem
+	}
+
+	@if $breakpoint==medium2{
+		@media only screen and  (max-width:46.875em){@content}; // 750px/16 = 43.75em
+	}
+
+	@if $breakpoint==small{
+		@media only screen and  (max-width:40.625em){@content}; // 650/16 = 40.625em
+	}
+
+	@if $breakpoint==small2{
+		@media only screen and  (max-width:34.375em){@content}; // 550/16 = 34.375em
+	}
+
+	@if $breakpoint==small3{
+		@media only screen and  (max-width:28.125em){@content}; // 450/16 = 28.125em
+	}
 }

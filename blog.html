@@ -17,12 +17,12 @@
           <li class="header-nav__item"><a href="index.html" class="header-nav__link">Home</a></li>
           <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
           <li class="header-nav__item"><a href="index.html" class="header-nav__logo">Bar-One</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">Blog</a></li>
+          <li class="header-nav__item"><a href="blog.html" class="header-nav__link">Blog</a></li>
           <li class="header-nav__item"><a href="contact.html" class="header-nav__link">Contact</a></li>
         </ul>
     </nav>
 
-    <h1 class="header__heading--blog">Blog</h1>
+    <h1 class="header__heading--blog heading-1">Blog</h1>
   </header>
   <!-- HEADER END -->
   <!-- MAIN START -->
@@ -37,30 +37,32 @@
         </div>
 
         <div class="mission__content">
+          
           <h2 class="mission__heading">Our mission</h2>
           <p class="mission__text">
               Nam dopibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum 
               <a href="#" class="mission__link">Find out more.</a>
           </p>
-          <h2 class="mission__heading">Recent Posts</h2>
+         
+          <h2 class="mission__heading mission__heading--posts">Recent Posts</h2>
+            <ul class="mission__post-list">
+                <li class="mission__post">
+                  <a href="" class="mission__post-link">Donic facilisis tortor ut</a>
+                </li>
+                
+                <li class="mission__post">
+                  <a href="" class="mission__post-link">Augue Lacinia at Vivera</a>
+                </li>
 
-          <ul class="mission__post-list">
-              <li class="mission__post">
-                <a href="" class="mission__post-link">Donic facilisis tortor ut</a>
-              </li>
-              
-              <li class="mission__post">
-                <a href="" class="mission__post-link">Augue Lacinia at Vivera</a>
-              </li>
+                <li class="mission__post">
+                  <a href="" class="mission__post-link">Semper sed sapien metus</a>
+                </li>
 
-              <li class="mission__post">
-                <a href="" class="mission__post-link">Semper sed sapien metus</a>
-              </li>
-
-              <li class="mission__post">
-                <a href="" class="mission__post-link">Scelerisque nec pharetra id</a>
-              </li>
-          </ul>
+                <li class="mission__post">
+                  <a href="" class="mission__post-link">Scelerisque nec pharetra id</a>
+                </li>
+            </ul>
+          
         </div>
       </aside>
 
@@ -107,21 +109,20 @@
                   </div>
               </div>
             </div>
-            
+
             <!-- FORM START -->
-            <form action="#" method="POST" class="comment-form">
-              <div class="comment-form__cell">
-                  <label for="comment-name" class="comment-form__label">Name</label>
-                  <input type="input" class="comment-form__input" name="comment-name" id="comment-name">
-              </div>
-
-              <div class="comment-form__cell">
-                  <label for="comment-email"  class="comment-form__label">Email address</label>
-                  <input type="email" class="comment-form__input" name="comment-email" id="comment-email">
-              </div>   
-
-              <textarea name="" id="" cols="20" rows="3" class="comment-form__comment">Comment</textarea>
-              <input type="submit" class="btn comment-form__submit" value="Post Comment">
+            <form action="#" method="POST" class="form comment-form">
+             
+              <label for="comment-name" class="visuallyhidden">Name</label>
+              <input type="input" class="form__input" name="comment-name" id="comment-name"
+                placeholder="Name">
+                    
+              <label for="comment-email"  class="visuallyhidden">Email address</label>
+              <input type="email" class="form__input" name="comment-email" id="comment-email"
+                placeholder="Email address">
+               
+              <textarea name="" id="" cols="20" rows="3" class="form__comment" placeholder="Comment"></textarea>
+              <input type="submit" class="btn form__submit" value="Post Comment">
             </form>
           </section>
       </section>
@@ -144,3 +145,7 @@
 <!-- Where to put main styles for blog  need answer -->
 <!-- should form bein a div? Noe its fine-->
 <!-- Where to wrap grid parent its...div? section in section?  In a wrapper div-->
+
+<!-- FATIMA QUESTIONS -->
+
+<!-- CONTACT PAGE -->

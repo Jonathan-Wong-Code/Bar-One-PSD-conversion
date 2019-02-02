@@ -20,21 +20,38 @@
   &__image-box--1{
     grid-column: full-start/col-end 4;
     transform: translateY(-10%); 
+
+    @include respond(larger){
+      transform: translateY(-20%); 
+    }
   }
 
   &__plan {
     grid-column: col-start 7/ middle-end; 
+
+    @include respond(larger){
+      padding:1rem 1rem 2rem 0rem;
+    }
   }
 
   &__locations {
     grid-column: middle-start /col-end 4;
     grid-row:2/3;
     text-align: right;
+    padding-left:1rem;
+
+    @include respond(larger){
+      padding:2rem 0rem 2rem 1rem;
+    }
+    
   }
 
   &__image-box--2{
     grid-column: col-start 7/ full-end;
     transform: translateY(10%);
+    @include respond(larger){
+      transform: translateY(20%); 
+    }
   }
 
   &__img{

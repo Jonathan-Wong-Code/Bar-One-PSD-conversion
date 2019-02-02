@@ -22,61 +22,64 @@
           </ul>
       </nav>
   
-      <h1 class="header__heading--contact">Get in Touch</h1>
+      <h1 class="header__heading--contact heading-1">Get in Touch</h1>
     </header>
     <!-- HEADER END -->
     <main>
     <!-- MAIN START -->
       <div class="contact-flex-container">
-      <section class="contact">
-        <div class="contact__info">
-          <ul class="contact__icon-box">
-              <li class="contact__icon-item">
-                <a href="" class="contact__icon-link">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-            
-              <li class="contact__icon-item">
-                <a href="" class="contact__icon-link">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-
-              <li class="contact__icon-item">
-                <a href="" class="contact__icon-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-              </li>
+        <section class="contact">
+          <div class="contact__info">
+            <ul class="contact__icon-box">
+                <li class="contact__icon-item">
+                  <a href="" class="contact__icon-link">
+                    <i class="fab fa-facebook-f contact__icon"></i>
+                  </a>
+                </li>
+              
+                <li class="contact__icon-item">
+                  <a href="" class="contact__icon-link">
+                    <i class="fab fa-instagram contact__icon"></i>
+                  </a>
+                </li>
 
                 <li class="contact__icon-item">
                   <a href="" class="contact__icon-link">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-twitter contact__icon"></i>
+                  </a>
+                </li>
+
+                <li class="contact__icon-item">
+                  <a href="" class="contact__icon-link">
+                    <i class="fab fa-whatsapp contact__icon"></i>
                   </a>
                 </li>             
-          </ul>
-          <p class="contact-info__email">info@email.com</p>
-          <p class="contact-info__phone">123 - 456 - 890</p>
-          <p class="contact-info__address">123 Queen Street West, Unit 10</p>
-          <p class="contact-info__city">Toronto, Ontario</p>
-          <p class="contact-info__postal"></p>
-        </div>
-      </section>
-
-      <form action="#" method="POST" class="comment-form">
-          <div class="comment-form__cell">
-              <label for="comment-name" class="comment-form__label">Name</label>
-              <input type="input" class="comment-form__input" name="comment-name" id="comment-name">
+            </ul>
+            <p class="contact__email contact__text">info@email.com</p>
+            <p class="contact__phone contact__text">123 - 456 - 890</p>
+            <p class="contact__address contact__text">123 Queen Street West, Unit 10</p>
+            <p class="contact__city contact__text">Toronto, Ontario</p>
+            <p class="contact__postal contact__text">M5V205</p>
           </div>
+        </section>
+        
+        <!-- contact-form START -->
+        <section class="contact-form">
+          <form action="#" method="POST" class="form">
+            <div class="form__cell">
+                <label for="comment-name" class="visuallyhidden">Name</label>
+                <input type="input" class="form__input contact-form__input" name="comment-name" id="comment-name" placeholder="Name"> 
+            </div>
 
-          <div class="comment-form__cell">
-              <label for="comment-email"  class="comment-form__label">Email address</label>
-              <input type="email" class="comment-form__input" name="comment-email" id="comment-email">
-          </div>   
+            <div class="form__cell">
+                <label for="comment-email"  class="visuallyhidden">Email address</label>
+                <input type="email" class="form__input contact-form__input" name="comment-email" id="comment-email" placeholder="Email address">   
+            </div>   
 
-          <textarea name="" id="" cols="20" rows="3" class="comment-form__comment">Comment</textarea>
-          <input type="submit" class="btn comment-form__submit" value="Post Comment">
-        </form>
+            <textarea name="" id="" cols="20" rows="3" class="form__comment contact-form__comment" placeholder="Message"></textarea>
+            <input type="submit" class="btn form__submit" value="Post Comment">
+          </form>
+      </section>
       </div>
     </main>
     <!-- FOOTER START -->

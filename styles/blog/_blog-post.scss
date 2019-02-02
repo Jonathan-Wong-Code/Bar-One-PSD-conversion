@@ -5,21 +5,50 @@
 
   grid-column: 5 / -1;
   
+  @include respond(largest){
+    grid-column: 6/ -1;
+    margin-left:10%;
+  }
+
+  @include respond(large){
+    margin:0;
+    order:4;
+    padding:2rem 0;
+  }
+
   &__img-box { 
     position: relative;
     left: 32px;
+
+    @include respond(large){
+      left:0;
+      width:80%;
+      margin:0 auto;
+    }
   }
 
   &__img {
     width: calc(100% - 32px);
     box-shadow: -37px 37px 0px -5px $color-orange;
     object-fit: cover;
+    display:block;
+
+    @include respond(large){
+      box-shadow:none;
+      width:100%;
+    }
   }
 
   &__post {
     border-left: 5px solid $color-orange;
     border-bottom: 5px solid $color-orange;
     padding: 6rem 15%;
+
+    @include respond(large){
+      border:none;
+      padding:2rem 10%;
+       
+    }
   }
 
   &__heading {

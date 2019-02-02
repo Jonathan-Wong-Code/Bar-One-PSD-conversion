@@ -2,11 +2,24 @@
   background-color:$color-black;
   padding:14rem 0 9rem 0;
 
-  &__list{
+  @include respond(large){
+    padding:4rem 0;
+  }
+
+  &__list {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23.5rem, 1fr));
     grid-row-gap:4rem;
     grid-column-gap: 3rem;
+  
+    @include respond(larger){
+      grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+    }
+
+    @include respond(large){
+      padding:2rem;
+      // grid-template-columns:1fr;
+    }
   }
 }
 
@@ -16,15 +29,26 @@
   grid-column-gap:1rem;
   grid-row-gap:.5rem;
 
+  // @include respond(large){
+  //   grid-template-columns:1fr;
+  //   justify-items:center;
+  //   text-align:center;
+  // }
+
   &__heading {
     @include font-primary-bold(3.4rem, .85, 2.2px);
     margin:0;
     grid-column:2/3;
-    grid-row:1/2;
+
+    // @include respond(large){
+    //   grid-column:1/2;
+    // }
   }
 
   &__text{
     margin:0;
+    @include respond(large){
+    }
   }
 
   &__icon {
@@ -36,7 +60,10 @@
     grid-row: 1/span 2;
     position:relative;
     display:block;
-    background-color:$color-red;
+    background-color:$color-red; 
+    // @include respond(large){
+    //   grid-row: 1/ span 1;
+    // }
   }
 
   &__icon i {

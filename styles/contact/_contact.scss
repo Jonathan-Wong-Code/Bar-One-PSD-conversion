@@ -1,3 +1,79 @@
 .contact{
   background-color: $color-black;
+  margin-left:10%;
+  width:30%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  &__info {
+    margin-bottom: 15%;
+  }
+
+  &__icon-box {
+    display:flex;
+  }
+
+  &__icon-item {
+    &:not(last-child){
+      margin-right:.7rem;
+    }
+  }
+
+  &__icon-link{
+    color:$color-white;
+    font-size:.9rem;
+  }
+
+  &__icon {
+
+  }
+
+  &__text{
+    margin:0;
+    font-size:1.4rem;
+  }
+
+  &__email {
+    margin-top:.5rem;
+    margin-bottom:1rem;
+  }
+}
+
+.contact-form {
+  width:63%;
+  background-color:$color-red-dark;
+  padding: 2rem;
+  box-shadow: $box-shadow-right;
+  margin-right:10%;
+  transform:translateY(-25%);
+
+  @include respond(larger){
+    transform: translateY(-20%);
+    margin-right:8%;
+  }
+
+  &__input{  
+    border-bottom: 1px solid $color-white; 
+
+    &::placeholder {
+      font-size:1.4rem;
+    }
+  }
+
+  &__input:focus-within {
+    background-color: lighten($color-black, 10);
+    border: 1px solid $color-white;
+    
+  }
+
+  &__comment {  
+    border: 1px solid $color-white;  
+    &::placeholder {
+      font-size:1.4rem;
+    }
+  }
+
+  &__submit {
+    grid-column: 1/-1;
+  }
 }

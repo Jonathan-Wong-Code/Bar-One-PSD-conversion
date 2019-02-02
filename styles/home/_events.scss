@@ -2,6 +2,11 @@
   padding: 6rem 0 6rem 0;
   background-color: $color-black;
   
+  @include respond(larger){
+    padding:6rem 2rem
+  }
+
+
   &__wrapper{
     display:flex;
     align-items:flex-start;
@@ -15,11 +20,20 @@
 
   &__left{
     width:25%;
-    margin-right:6rem;
+    margin-right: 9%;
+
+    @include respond(larger){
+      width:35%;
+    }
   }
 
   &__right{
     width:75%;
+
+    @include respond(larger){
+      width:65%;
+      align-self:center;
+    }
   }
 
   &__text{

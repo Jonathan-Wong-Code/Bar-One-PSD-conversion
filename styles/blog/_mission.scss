@@ -4,7 +4,17 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   align-items: start;
- 
+  
+  @include respond(largest){
+    grid-column: 1/ 6;
+  }
+
+  @include respond(large){
+    grid-template-columns: 1fr;
+    
+    padding-top:2rem;
+  }
+
   &__img-box { 
     border: none;
     margin-right: 10%;
@@ -12,6 +22,17 @@
     grid-row: 1/2;
     grid-column: 1/11;
     z-index: 2; 
+
+    @include respond(largest){
+      margin-right:12%;
+    }
+    @include respond(large){
+      margin:0 auto 2rem auto;
+      transform: translateY(0);
+      width:50%;
+      padding-top:0;
+    }
+    
   }
 
   &__img {
@@ -22,6 +43,7 @@
 
   &__heading{
     margin: 0;
+    
   }
 
   &__content{
@@ -30,15 +52,51 @@
     grid-row: 1/2;
     grid-column: 3/11;
     background-color: $color-red-dark;
+
+    @include respond(largest){
+      margin-right:10%;
+    }
+
+    @include respond(larger){
+      grid-column: 1/11;
+      margin-right:8%;
+      padding-top:88%;
+    }
+
+    @include respond(large){
+      padding-top:2rem;
+      margin-top:2rem;
+      grid-row:auto;
+      margin:0;
+      text-align: center;
+    }
+
+    
   }
 
   &__heading {
     @include font-primary-bold(3.4rem, .85, 2.2px);
     margin: 0;
+    @include respond(large){
+      text-align: center;
+      &--posts:before {
+        content: "";
+        height:1px;
+        width:100%;
+        margin:0 auto 1rem auto;
+        background:$color-orange;
+        display:block;
+      }
+    }
+    
   }
 
   &__text {
     margin-top: 0;
+    @include respond(large){
+      width:50%;
+      margin:0 auto 2rem auto; 
+    }  
   }
 
   &__link {
@@ -50,6 +108,10 @@
     padding-left: 1.5rem;
     list-style-type: disc;
     color: $color-red;
+    @include respond(large){
+     text-align:center;   
+     width:100%; 
+    }
   }
 
   &__post-link {
