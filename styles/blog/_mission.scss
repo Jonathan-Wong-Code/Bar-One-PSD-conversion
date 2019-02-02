@@ -10,8 +10,7 @@
   }
 
   @include respond(large){
-    grid-template-columns: 1fr;
-    
+    grid-template-columns: 1fr;  
     padding-top:2rem;
   }
 
@@ -26,6 +25,7 @@
     @include respond(largest){
       margin-right:12%;
     }
+
     @include respond(large){
       margin:0 auto 2rem auto;
       transform: translateY(0);
@@ -75,7 +75,6 @@
   }
 
   &__heading {
-    @include font-primary-bold(3.4rem, .85, 2.2px);
     margin: 0;
     @include respond(large){
       text-align: center;
@@ -97,6 +96,10 @@
       width:50%;
       margin:0 auto 2rem auto; 
     }  
+
+    @include respond(medium2){
+      width:80%;
+    }
   }
 
   &__link {

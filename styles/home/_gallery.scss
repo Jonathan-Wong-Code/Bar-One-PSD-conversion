@@ -2,18 +2,38 @@
   background-color: $color-red-dark;
   padding:6rem 0;
 
+  @include respond(medium){
+    padding:4rem 0;
+  }
+
   &__images{
     width:100%;
     display:flex;
+
+    @include respond(medium2){
+      flex-direction: column;
+      align-items:center;
+    }
   }
 
   &__img-box {
     width:33%;
 
+    @include respond(medium2){
+      width:60%;
+      border:5px solid $color-orange;
+    }
+
     &:not(:last-child){
       margin-right:2.5rem;
+
+      @include respond(medium2){
+        margin-right:0;
+        margin-bottom:2rem;
+      }
     }
   }
+
   &__img{
     width:100%;
     display:block;

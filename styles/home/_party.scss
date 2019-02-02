@@ -5,8 +5,12 @@
   @include respond(large){
     padding:6rem 0;
   }
+
+  @include respond(medium){
+    padding:5rem 2rem;
+  }
+
   &__heading {
-    @include font-primary-bold(3.4rem, .85, 2.2px);
     color: $color-orange;
     margin: 0;
   }
@@ -14,5 +18,9 @@
   &__text {
     width:70%;
     margin:1rem auto 2rem auto;
+    
+    @include respond(medium){
+      width:100%;
+    }
   }
 }

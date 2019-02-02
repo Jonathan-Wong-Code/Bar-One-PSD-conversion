@@ -4,21 +4,43 @@
   @include respond(largest){
     padding: 1rem 5%;
   }
+
+  @include respond(small){
+    padding:0 1rem;
+    text-align: center;
+  }
+
   &__content {
     padding: 0 2rem;
+    @include respond(small){
+      padding:0;
+    }
   }
+
   &__heading {
-    @include font-primary-bold(3.4rem, .85, 2.2px);
     margin-bottom: 1.5rem;
   }
 }
 
 .comment{
   display: flex;
-  
+  @include respond(small){
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   &__img-box {
    flex-basis: 14%;
    transform: translateY(8px);
+   @include respond(medium2){
+     flex-basis:20%;
+   }
+
+   @include respond(small){
+    width:20%;
+    transform:translateY(0);
+    margin-bottom:1rem;
+  }
   }
 
   &__img {
@@ -29,6 +51,15 @@
   &__comment-box {
     padding-left: 2.5rem;
     flex-basis: 86%;
+
+    @include respond(medium2){
+      flex-basis:80%;
+      padding-left:1.5rem;
+    }
+
+    @include respond(small){
+      padding:0;
+    }
   }
 
   &__date {
@@ -36,6 +67,9 @@
     margin-bottom: .5rem;
     color: $color-orange;
     font-size: 2.5rem;
+    @include respond(medium2){
+      font-size:2.3rem;
+    }
   }
 
   &__comment {
