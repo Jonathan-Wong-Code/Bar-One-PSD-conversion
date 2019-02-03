@@ -604,13 +604,13 @@ a {
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards; }
   .checkbox-nav:checked + .checkbox-nav__label .checkbox-nav__icon {
-    background-color: transparent;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     z-index: 10000;
     top: 50%;
-    left: 15%; }
+    left: 15%;
+    background-color: transparent; }
     .checkbox-nav:checked + .checkbox-nav__label .checkbox-nav__icon::after, .checkbox-nav:checked + .checkbox-nav__label .checkbox-nav__icon::before {
       left: 50%;
       top: 50%;
@@ -624,16 +624,16 @@ a {
       height: 2px;
       width: 2rem; }
   .checkbox-nav__label {
+    height: 3rem;
+    width: 3rem;
     display: none;
     position: fixed;
     top: 5%;
     right: 5%;
-    height: 3rem;
-    width: 3rem;
+    z-index: 105;
     background: #111010;
     border: 1px solid #fff;
     border-radius: 50%;
-    z-index: 105;
     cursor: pointer; }
     @media only screen and (max-width: 62.5em) {
       .checkbox-nav__label {
@@ -651,8 +651,7 @@ a {
     transform: translate(-50%, -50%);
     -webkit-transition: .2s all;
     -o-transition: .2s all;
-    transition: .2s all;
-    /**OPEN MOBILE MENU **/ }
+    transition: .2s all; }
     .checkbox-nav__icon::before, .checkbox-nav__icon::after {
       content: '';
       height: 1px;
@@ -878,8 +877,8 @@ a {
       box-shadow: -20px 20px 0px 3px #ff8327; }
     @media only screen and (max-width: 62.5em) {
       .info__img {
-        -webkit-box-shadow: n one;
-        box-shadow: n one;
+        -webkit-box-shadow: none;
+        box-shadow: none;
         border: 10px solid #ff8327; } }
     @media only screen and (max-width: 37.5em) {
       .info__img {

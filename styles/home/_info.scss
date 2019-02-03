@@ -110,7 +110,7 @@
     }
 
     @include respond(medium) {
-      box-shadow:n one;
+      box-shadow:none;
       border: 10px solid $color-orange;
     }
 
