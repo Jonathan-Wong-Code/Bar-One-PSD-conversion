@@ -12,6 +12,10 @@
 <body> 
   <!-- HEADER START -->
   <header class="header header--blog">
+    <input type="checkbox" class="checkbox-nav" id="checkbox-nav">
+    <label for="checkbox-nav" class="checkbox-nav__label">
+      <span class="checkbox-nav__icon"></span>
+    </label>
     <nav class="header-nav">
         <ul class="header-nav__navigation">
           <li class="header-nav__item"><a href="index.html" class="header-nav__link">Home</a></li>
@@ -112,15 +116,15 @@
             <form action="#" method="POST" class="form comment-form">
              
               <label for="comment-name" class="visuallyhidden">Name</label>
-              <input type="input" class="form__input" name="comment-name" id="comment-name"
+              <input type="input" class="form__input" name="name" id="comment-name"
                 placeholder="Name">
                     
               <label for="comment-email"  class="visuallyhidden">Email address</label>
-              <input type="email" class="form__input" name="comment-email" id="comment-email"
+              <input type="email" class="form__input" name="email" id="comment-email"
                 placeholder="Email address">
                
-              <textarea name="" id="" cols="20" rows="3" class="form__comment" placeholder="Comment"></textarea>
-              <input type="submit" class="btn form__submit" value="Post Comment">
+              <textarea name="" id="" cols="20" rows="3" class="form__comment" placeholder="Comment" name="comment"></textarea>
+              <input type="submit" class="btn form__submit" value="Post Comment" id="comment-submit">
             </form>
           </section>
       </section>
@@ -132,6 +136,7 @@
     <p class="footer__copyright">Copyright &copy; 2019 HackerYou</p>
   </footer>
   <!-- FOOTER END -->
+  <script src="js/script.js"></script>
 </body>
 </html>
 

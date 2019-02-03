@@ -2,7 +2,7 @@
   background-color:$color-black;
   padding:14rem 0 9rem 0;
 
-  @include respond(large){
+  @include respond(large3){
     padding:4rem 0 6rem 0;
   }
 
@@ -51,7 +51,7 @@
 
   &__text{
     margin:0;
-    @include respond(large){
+    @include respond(large3){
     }
   }
 
@@ -65,7 +65,7 @@
     position:relative;
     display:block;
     background-color:$color-red; 
-    @include respond(large){
+    @include respond(large3){
       font-size:1.3rem;
       height:2.7rem;
       width: 2.7rem;

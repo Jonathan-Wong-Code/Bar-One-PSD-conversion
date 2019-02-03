@@ -2,7 +2,7 @@
   padding: 6rem 0;
   background-color: $color-black;
   
-  @include respond(larger){
+  @include respond(large2){
     padding:6rem 2rem
   }
 
@@ -30,7 +30,7 @@
     width:25%;
     margin-right: 9%;
 
-    @include respond(larger){
+    @include respond(large2){
       width:35%;
     }
     
@@ -47,7 +47,7 @@
   &__right{
     width:75%;
 
-    @include respond(larger){
+    @include respond(large2){
       width:65%;
       align-self:center;
     }

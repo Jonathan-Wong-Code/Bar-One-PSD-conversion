@@ -1,0 +1,37 @@
+@keyframes fadeInLeft{
+	0%{
+		transform: translate(-10rem,0) scale(.5);
+		opacity: 0;
+	}
+
+
+	100%{
+		transform: translate(0rem,0) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInRight{
+	0%{
+		transform: translate(10rem,0) scale(.5);
+		opacity: 0;
+	}
+
+	100%{
+		transform: translate(0rem,0) scale(1);
+		opacity: 1;
+	}
+
+}
+
+@keyframes fadeIn{
+	0%{
+		
+		opacity: 0;
+	}
+
+	100%{
+	
+		opacity:1;
+	}
+}

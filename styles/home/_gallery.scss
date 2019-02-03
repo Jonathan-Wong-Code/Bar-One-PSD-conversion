@@ -24,6 +24,10 @@
       border:5px solid $color-orange;
     }
 
+    @include respond(small2){
+      width:75%;
+    }
+
     &:not(:last-child){
       margin-right:2.5rem;
 

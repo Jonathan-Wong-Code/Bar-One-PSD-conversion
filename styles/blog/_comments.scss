@@ -1,7 +1,7 @@
 .comments {
   padding: 1rem 10%;
 
-  @include respond(largest){
+  @include respond(large){
     padding: 1rem 5%;
   }
 
@@ -80,7 +80,7 @@
    margin: 0;
    margin-bottom: 5rem;
 
-   @include respond(larger){
+   @include respond(large2){
     &:last-child{
       margin-bottom:3rem;
     }

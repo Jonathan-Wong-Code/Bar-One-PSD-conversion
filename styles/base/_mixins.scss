@@ -1,14 +1,14 @@
 
 @mixin respond($breakpoint){
-	@if $breakpoint==largest { 
+	@if $breakpoint==large { 
 		@media only screen and  (max-width:101.25em){@content}; // 1620px /16px = 101.25em
 	}
 	
-	@if $breakpoint==larger{
+	@if $breakpoint==large2{
 		@media only screen and  (max-width:87.5em){@content}; // 1400px/16px = 87.5em
 	}
 	
-	@if $breakpoint==large{
+	@if $breakpoint==large3{
 		@media only screen and  (max-width:72.5em){@content}; // 1160/16px = 72.5emem
 	}
 
@@ -26,5 +26,9 @@
 
 	@if $breakpoint==small2{
 		@media only screen and  (max-width:31.25em){@content}; // 500/16 = 31.25em
+  }
+  
+  @if $breakpoint==small3{
+		@media only screen and  (max-width:23.125em){@content}; // 370/16 = 23.125em
 	}
 }

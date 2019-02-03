@@ -5,24 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css type="text/css">
+  
   <link href="https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <title>Bar-One</title>
 </head>
 <body>
+  
   <!-- HEADER START -->
   <header class="header header--home">
-    <nav class="header-nav">
+    <input type="checkbox" class="checkbox-nav" id="checkbox-nav">
+    <label for="checkbox-nav" class="checkbox-nav__label">
+      <span class="checkbox-nav__icon"></span>
+    </label>
+    <nav class="header-nav ">
         <ul class="header-nav__navigation">
-          <li class="header-nav__item"><a href="index.html" class="header-nav__link">Home</a></li>
-          <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
-          <li class="header-nav__item"><a href="index.html" class="header-nav__logo">Bar-One</a></li>
-          <li class="header-nav__item"><a href="blog.html" class="header-nav__link">Blog</a></li>
-          <li class="header-nav__item"><a href="contact.html" class="header-nav__link">Contact</a></li>
+          <li class="header-nav__item">
+            <a href="index.html" class="header-nav__link ">Home</a>
+          </li>
+
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link ">About</a>
+          </li>
+
+          <li class="header-nav__item">
+            <a href="index.html" class="header-nav__logo ">Bar-One</a>
+          </li>
+
+          <li class="header-nav__item">
+            <a href="blog.html" class="header-nav__link ">Blog</a>
+          </li>
+
+          <li class="header-nav__item">
+            <a href="contact.html" class="header-nav__link">Contact</a>
+          </li>
         </ul>
     </nav>
 
-    <h1 class="header__heading"><span class="header__heading--large">Bar-One</span>Place to be is</h1>
+    <h1 class="header__heading"><span class="header__heading--large3">Bar-One</span>Place to be is</h1>
 
     <div class="header__img-box">
         <img src="images/header-box.jpg" alt="A black and white photo of wine glasses hanging from the ceiling rack." class="header__img">
@@ -105,19 +126,19 @@
 
     <!-- BANNER START -->
     <section class="banner">
-      <img src="../images/banner-image.jpg" alt="A close up picture of abeer at the front of the beer." class="banner__img">
+      <!-- <img src="../images/banner-image.jpg" alt="A close up picture of abeer at the front of the beer." class="banner__img"> -->
     </section>
 
     <!-- EVENTS START -->
     <section class="events">
       <div class="wrapper events__wrapper">
           <div class="events__left">
-            <img src="../images/small-box-image.jpg" alt="A picture from a the mouthdown of a person holding a drink and her friend also holding a drink at an event at the bar." class="events__img">
+              <img src="../images/small-box-image.jpg" alt="A picture from a the mouthdown of a person holding a drink and her friend also holding a drink at an event at the bar." class="events__img">
           </div>
           <div class="events__right">
-            <h2 class="events__heading heading-2">Events</h2>
-            <p class="events__text">Lorem ipsdum dolor sit amet, consectetur adipisicing elit, Nulla pulvinor tortor nulla elementum eleifend. Vestiblum consequat vestibulum felis pharetra luctus. Quisique interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulinvor tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisique interdum orci quis convallis</p>
-            <button class="btn">Find Out More</button>
+              <h2 class="events__heading heading-2">Events</h2>
+              <p class="events__text">Lorem ipsdum dolor sit amet, consectetur adipisicing elit, Nulla pulvinor tortor nulla elementum eleifend. Vestiblum consequat vestibulum felis pharetra luctus. Quisique interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulinvor tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisique interdum orci quis convallis</p>
+              <button class="btn">Find Out More</button>
           </div>
       </div>
     </section>
@@ -127,15 +148,15 @@
       <div class="wrapper">
         <ul class="gallery__images">
           <li class="gallery__img-box">
-            <img src="../images/gallery-image-1.jpg" alt="The front view of a black granite-top bar with sparse pot lightsin the background and bottles of liquor and wine glasses adorning the back" class="gallery__img">
+              <img src="../images/gallery-image-1.jpg" alt="The front view of a black granite-top bar with sparse pot lightsin the background and bottles of liquor and wine glasses adorning the back" class="gallery__img">
           </li>
 
           <li class="gallery__img-box">
-            <img src="../images/gallery-image-2.jpg" alt="A close up photo of a bacon cheeseburger on the left with a side of fries on the left and a cup of white sauce in the week" class="gallery__img">
+              <img src="../images/gallery-image-2.jpg" alt="A close up photo of a bacon cheeseburger on the left with a side of fries on the left and a cup of white sauce in the week" class="gallery__img">
           </li>
 
           <li class="gallery__img-box">
-            <img src="../images/gallery-image-3.jpg" alt="A mixed orange cocktail drink with cherry tomato halves on a stick and tsitting on to of a bar coloured bar" class="gallery__img">
+              <img src="../images/gallery-image-3.jpg" alt="A mixed orange cocktail drink with cherry tomato halves on a stick and tsitting on to of a bar coloured bar" class="gallery__img">
           </li>
         </ul>
       </div>
@@ -145,7 +166,8 @@
   <!-- FOOTER START -->
   <footer class="footer">
     <p class="footer__copyright">Copyright &copy; 2019 HackerYou</p>
-  </footer>
+  </footer> 
+  <script src="js/script.js"></script>
 </body>
 </html>
 

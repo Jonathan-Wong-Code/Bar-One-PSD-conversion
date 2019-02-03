@@ -5,12 +5,12 @@
 
   grid-column: 5 / -1;
   
-  @include respond(largest){
+  @include respond(large){
     grid-column: 6/ -1;
     margin-left:10%;
   }
 
-  @include respond(large){
+  @include respond(large3){
     margin:0;
     order:4;
     padding:2rem 0;
@@ -19,7 +19,7 @@
   &__img-box { 
     margin-left:32px;
 
-    @include respond(large){
+    @include respond(large3){
       left:0;
       width:80%;
       margin:0 auto;
@@ -32,9 +32,10 @@
     object-fit: cover;
     display:block;
 
-    @include respond(large){
+    @include respond(large3){
       box-shadow:none;
       width:100%;
+     
     }
   }
 
@@ -43,7 +44,7 @@
     border-bottom: 5px solid $color-orange;
     padding: 6rem 15%;
 
-    @include respond(large){
+    @include respond(large3){
       border:none;
       padding:2rem 10%;
        

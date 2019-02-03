@@ -1,19 +1,28 @@
 html {
   font-size: 125%;
-  // @include respond(large){
+  // @include respond(large3){
   //   font-size: 115%;
   // }
 }
 
 body{
+  
   font-size: 1.95rem;
   font-family: $font-primary;
   line-height: .77;
   letter-spacing: 1.9px;
+  
+  transition: 2s all;
+  opacity:0; /* Opacity set to 0 and set to 1 on window load with Javascript for fade in effect */
+  background:$color-black;
   color:$color-white;
-
-  @include respond(larger){
+  
+  @include respond(large2){
     font-size:1.8rem;
+  }
+
+  @include respond(small3){
+    font-size:1.6rem;
   }
 }
 

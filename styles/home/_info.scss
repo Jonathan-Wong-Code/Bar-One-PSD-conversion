@@ -12,6 +12,10 @@
     padding:3rem 0;
   }
 
+  @include respond(small){
+    padding:0 0 3rem 0;
+  }
+
   &__header {
     
     margin-top:0;
@@ -38,11 +42,11 @@
     grid-column: full-start/col-end 4;
     transform: translateY(-10%); 
 
-    @include respond(larger){
+    @include respond(large2){
       transform: translateY(-20%); 
     }
 
-    @include respond(large){
+    @include respond(large3){
       transform: translateY(-25%); 
     }
 
@@ -54,7 +58,7 @@
   &__plan {
     grid-column: col-start 7/ middle-end; 
 
-    @include respond(larger){
+    @include respond(large2){
       padding:1rem 1rem 2rem 0rem;
     }
 
@@ -69,7 +73,7 @@
     text-align: right;
     padding-left:1rem;
 
-    @include respond(larger){
+    @include respond(large2){
       padding:2rem 0rem 2rem 1rem;
     }
 
@@ -85,7 +89,7 @@
   &__image-box--2{
     grid-column: col-start 7/ full-end;
     transform: translateY(10%);
-    @include respond(larger){
+    @include respond(large2){
       transform: translateY(20%); 
     }
 
@@ -109,6 +113,10 @@
     @include respond(medium){
       box-shadow:none;
       border:10px solid $color-orange;
+    }
+
+    @include respond(small){
+      border:none;
     }
   } 
 }

@@ -8,6 +8,10 @@
   @include respond(small2){
     font-size:5.5rem;
   }
+
+  @include respond(small3){
+    font-size:4rem;
+  }
 }
 
 .heading-2{
@@ -16,7 +20,7 @@
   line-height: .85;
   font-weight:600;
 
-  @include respond(larger){
+  @include respond(large2){
     font-size:3.2rem;
   }
 }

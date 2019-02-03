@@ -3,7 +3,7 @@
   grid-template-columns: repeat(12, 1fr);
   background-color:$color-black;
   
-  @include respond(large){
+  @include respond(large3){
     display:block;
   }
 }
