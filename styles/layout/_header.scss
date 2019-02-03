@@ -1,15 +1,16 @@
-.header{  
-    display:grid;
+.header {  
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:90vh;
-    @include respond(large3){
-      grid-template-rows:70vh;
+    grid-template-rows: 90vh;
+
+    @include respond(large3) {
+      grid-template-rows: 70vh;
     }
     /** HEADER HOME STYLES **/
     &--home {
       background-image: url(../images/home-image-1.jpg);
-      background-size:cover;
-      background-position:center;
+      background-size: cover;
+      background-position: center;
     }
 
     &__heading {
@@ -17,63 +18,61 @@
       font-family:$font-primary;
       letter-spacing: 2.6px;
       line-height:.65;
+      margin:0;
       opacity:0;
       animation: fadeIn 1s 1s;
       animation-fill-mode: forwards;
-      margin:0;
       
       grid-row: 1/2;
       grid-column: 1/2;
+
       justify-self: center;
       align-self: end;
       position:relative; /* For z-index in edge */
       transform:translateY(-50%);
       z-index:2;
 
-      @include respond(large3){
+      @include respond(large3) {
         align-self: center;
-        transform:translate(0);
+        transform: translate(0);
       }
 
-      @include respond(small2){
-        font-size:4rem;
+      @include respond(small2) {
+        font-size: 4rem;
       }
 
-      @include respond(small3){
-        font-size:3rem;
-        
+      @include respond(small3) {
+        font-size: 3rem;
       }
 
-      &--large3{
+      &--large {
         font-family: $font-secondary;
         font-size: 13.07rem;
-        font-weight:300;
-
+        font-weight: 300;
+        margin-left: -7px;
+        display: block;
         color: $color-orange;
-        display:block;
-        margin-left:-7px;
-
-        @include respond(small2){
-          font-size:10.5rem;
+       
+        @include respond(small2) {
+          font-size: 10.5rem;
         }
 
-        @include respond(small3){
-          font-size:8rem;
+        @include respond(small3) {
+          font-size: 8rem;
         }
       }
     }  
 
     &__img-box {
-      width:50%;
-
+      width: 50%;
       grid-row: 1/2;
       grid-column: 1/2;
       justify-self: end;
       align-self: end;  
       transform: translateY(25%);
 
-      @include respond(large3){
-        display:none;
+      @include respond(large3) {
+        display: none;
       }
     }
 
@@ -88,39 +87,39 @@
       background-image: url(../images/blog-header-1.jpg);
       background-size: cover;
 
-      @include respond(large3){
+      @include respond(large3) {
         height:70vh;
       }
     }
 
     &__heading--blog {
+      margin-left: 10%;
+
       grid-row: 1/1;
       grid-column: 1/1;
       align-self: center;
       transform: translateY(40%);  
-      margin-left:10%;
-      display:inline-block;
-
+     
       opacity:0;
       animation: fadeIn 1s 1s;
       animation-fill-mode: forwards;
 
-      @include respond(large3){
-        margin:0;
+      @include respond(large3) {
+        margin: 0;
         justify-self: center;
         transform: translateY(0);
-        
       }
     }
 
     /*** HEADER CONTACT STYLES ***/
 
     &--contact {
-      grid-template-rows:50vh;
+      grid-template-rows: 50vh;
       background-image: url(../images/contact-header-1.jpg);
-      background-size:cover;
-      @include respond(small2){
-        grid-template-rows:70vh;
+      background-size: cover;
+
+      @include respond(small2) {
+        grid-template-rows: 70vh;
       }
     }
 
@@ -128,14 +127,14 @@
       grid-row: 1/1;
       grid-column: 1/1;
       align-self: center;
-      margin-left:10%;
+      margin-left: 10%;
       
-      opacity:0;
+      opacity: 0;
       animation: fadeIn 1s 1s;
       animation-fill-mode: forwards;
 
-      @include respond(medium){
-        margin:0;
+      @include respond(medium) {
+        margin: 0;
         justify-self: center;
       }
     }
@@ -143,35 +142,36 @@
 
 /* HEADER NAV FOR ALL THREE PAGES */
 .header-nav { 
-  width:45%;
-  margin-top:3%;
+  width: 45%;
+  margin-top: 3%;
 
   grid-row: 1/2;
   grid-column: 1/2;
   justify-self: center;
-  align-self:start;
+  align-self: start;
 
   transition: .5s transform, 1s opacity;
   opacity:0;
   animation: fadeIn 1s .5s;
   animation-fill-mode: forwards;
-  @include respond(large){
-    width:65%;
+
+  @include respond(large) {
+    width: 65%;
   }
 
-  @include respond(large3){
-    width:80%;
+  @include respond(large3) {
+    width: 80%;
   }
 
-  @include respond(medium){
-    opacity:0;
-    transform: scale(0);
-    background: rgba(0,0,0, .9);
+  @include respond(medium) {
     height:100vh;
     width:100vw;
+    margin:0;
+    transform: scale(0);
+    opacity: 0;
+    background: rgba(0,0,0, .9);
     z-index:100;
     position:fixed;
-    margin:0;
   }
   
   &__navigation {
@@ -179,34 +179,34 @@
     align-items: center;
     text-align: center;
 
-    @include respond(medium){
-      flex-direction:column;
+    @include respond(medium) {
+      height: 100%;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:100%;
     }
   }
 
   &__item{
-    width:20%;
-    @include respond(medium){
-      width:100%;
-      margin-bottom:1rem;
+    width: 20%;
+
+    @include respond(medium) {
+      width: 100%;
+      margin-bottom: 1rem;
     }
   }
 
   &__link {
-    font-size:1.9rem;
-    line-height:.76;
+    font-size: 1.9rem;
+    line-height: .76;
     letter-spacing: 1.9px;
     text-transform: uppercase;
-    display:block;
+    display: block;
     padding: .5rem 0;
-    letter-spacing: 1.9px;
-    color: inherit;
+    color: currentColor;
 
-    @include respond(medium){
-      font-size:5rem;
+    @include respond(medium) {
+      font-size: 5rem;
     }
   }
 
@@ -218,8 +218,8 @@
     color: currentColor;
     padding: .5rem 1rem;
 
-    @include respond(medium){
-      display:none;
+    @include respond(medium) {
+      display: none;
     }
   }
 
@@ -231,103 +231,97 @@
 /** CHECKBOX NAV and MOBILE MENU OPENING**/
 
 .checkbox-nav {
-  display:none;
+  display: none;
   
   &:checked ~ .header-nav {
-    transform:scale(1);
-    opacity:1;  
+    transform: scale(1);
+    opacity: 1;  
   } 
 
-  &:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 1){
+  &:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 1) {
     animation: fadeInLeft 1s .5s;
     animation-fill-mode: backwards;
   } 
 
-  &:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 2){
+  &:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 2) {
     animation: fadeInRight 1s .5s;
     animation-fill-mode: backwards;
   } 
 
-  &:checked + &__label &__icon{
-		background-color:transparent;
+  &:checked + &__label &__icon {	
 		transform: rotate(45deg);
-		z-index:10000;
-    transform-origin:center;
-    top:50%;
-    left:15%;
+		z-index: 10000;
+    top: 50%;
+    left :15%;
+    background-color: transparent;
 
-		&::after,&::before{
-			left:50%;
-			top:50%;
+		&::after, &::before{
+			left: 50%;
+			top: 50%;
 			transform: translate(-50%,-50%);
 		}
 
-		&::after{
-			width:2px;
-			height:2rem;
+		&::after {
+			width: 2px;
+			height: 2rem;
 		}
 
-		&::before{
-			height:2px;
-			width:2rem;
+		&::before {
+			height: 2px;
+			width: 2rem;
 		}
 	}
 
-  // &:not(:checked) ~ .header-nav {
-  //   transform:scale(0);
-  //   opacity:1;
-  // }
-
   &__label {
-    display:none;
-    position:fixed;
-    top:5%;
-    right:5%;
-    height:3rem;
-    width:3rem;
-    background:$color-black;
-    border:1px solid $color-white;
-    border-radius:50%;
-    z-index:105;
+    height: 3rem;
+    width: 3rem;
 
-    cursor:pointer;
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 105;
 
-    @include respond(medium){
-      display:block;
+    background: $color-black;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+    
+    cursor: pointer;
+
+    @include respond(medium) {
+      display: block;
     }
   }
 
-  &__icon{
-    display:block;
-    width:70%;
-    height:1px;
-    background:$color-white;
+  &__icon {
+    display: block;
+    width: 70%;
+    height: 1px;
+    background: $color-white;
     
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
     transition:.2s all;
+
     &::before, &::after {
-      content:'';
-      height:1px;
-      width:100%;
-      background-color:currentColor;
-      display:block;
-      position:absolute;
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: currentColor;
+      display: block;
+      position: absolute;
     }
 
-    &::before{
-      top:12px;
+    &::before {
+      top: 12px;
     }
 
-    &::after{
-      bottom:12px;
-    }
-    /**OPEN MOBILE MENU **/
-
-    
+    &::after {
+      bottom: 12px;
+    } 
   }
 }
 

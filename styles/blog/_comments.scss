@@ -1,19 +1,20 @@
 .comments {
   padding: 1rem 10%;
 
-  @include respond(large){
+  @include respond(large) {
     padding: 1rem 5%;
   }
 
-  @include respond(small){
-    padding:0 1rem;
+  @include respond(small) {
+    padding: 0 1rem;
     text-align: center;
   }
 
   &__content {
     padding: 0 2rem;
-    @include respond(small){
-      padding:0;
+    
+    @include respond(small) {
+      padding: 0;
     }
   }
 
@@ -22,27 +23,31 @@
   }
 }
 
-.comment{
+.comment {
   display: flex;
 
-  @include respond(small){
+  @include respond(small) {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   &__img-box {
-   flex-basis: 14%;
+   width: 14%;
    transform: translateY(8px);
 
-    @include respond(medium2){
-      flex-basis:20%;
+    @include respond(large2) {
+      width: 20%
     }
 
-    @include respond(small){
-      width:20%;
-      transform:translateY(0);
-      margin-bottom:1rem;
+    @include respond(large3) {
+      width: 17%;
+    }
+    
+    @include respond(small) {
+      width: 20%;
+      transform: translateY(0);
+      margin-bottom: 1rem;
     }
   }
 
@@ -53,26 +58,33 @@
 
   &__comment-box {
     padding-left: 2.5rem;
-    flex-basis: 86%;
+    width: 86%;
 
-    @include respond(medium2){
-      flex-basis:80%;
-      padding-left:1.5rem;
+    @include respond(large2) {
+      width: 80%;
     }
 
-    @include respond(small){
-      padding:0;
+    @include respond(large3) {
+      width: 83%;
+    }
+
+    @include respond(medium) {
+      padding-left: 1.5rem;
+    }
+
+    @include respond(small) {
+      padding: 0;
     }
   }
 
   &__date {
+    font-size: 2.5rem;
     margin: 0;
     margin-bottom: .5rem;
     color: $color-orange;
-    font-size: 2.5rem;
-
+    
     @include respond(medium2){
-      font-size:2.3rem;
+      font-size: 2.3rem;
     }
   }
 
@@ -80,18 +92,17 @@
    margin: 0;
    margin-bottom: 5rem;
 
-   @include respond(large2){
-    &:last-child{
-      margin-bottom:3rem;
+   @include respond(large2) {
+    &:last-child {
+      margin-bottom: 3rem;
     }
    }
   }
 }
 
-.comment-form{
-  @include respond(small2){
-    border-top:1px dashed $color-white;
-  
+.comment-form {
+  @include respond(small2) {
+    border-top: 1px dashed $color-white;
   }
 }
 

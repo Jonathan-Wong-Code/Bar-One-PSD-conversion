@@ -1,8 +1,8 @@
 .contact-flex-container {
   background-color: $color-black;
-  display:flex;
+  display: flex;
 
-  @include respond(medium){
+  @include respond(medium) {
     flex-direction: column;
   }
 }

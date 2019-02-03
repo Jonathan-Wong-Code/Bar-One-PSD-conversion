@@ -1,56 +1,55 @@
 .info {
- 
   display: grid;
-  grid-template-columns:[full-start]1fr [middle-start]repeat(10, [col-start] minmax(min-content, 7rem)[col-end])[middle-end] 1fr[full-end];
-  align-items:center;
+  grid-template-columns: [full-start] 1fr [middle-start] 
+   repeat(10, [col-start] minmax(min-content, 7rem)[col-end]) [middle-end] 1fr [full-end];
+  align-items: center;
   background-color: $color-red-dark;
 
-  @include respond(medium){
+  @include respond(medium) {
+    padding: 3rem 0;
     grid-template-columns: 1fr;
     justify-items: center;
     text-align: center;
-    padding:3rem 0;
   }
 
-  @include respond(small){
-    padding:0 0 3rem 0;
+  @include respond(small) {
+    padding: 0 0 3rem 0;
   }
 
   &__header {
-    
-    margin-top:0;
-    margin-bottom:.5rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
   }
 
   &__text {
-    margin-top:0;
-    margin-bottom:2rem;
-    text-align:left;
-
-    @include respond(medium){
-      text-align:center;
-      width:70%;
-      margin:0 auto 2rem auto;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    
+    @include respond(medium) {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto 2rem auto;
     }
 
-    @include respond(medium2){
-      width:80%;
+    @include respond(medium2) {
+      width: 80%;
     }
   }
 
-  &__image-box--1{
+  &__image-box--1 {
     grid-column: full-start/col-end 4;
     transform: translateY(-10%); 
 
-    @include respond(large2){
+    @include respond(large2) {
       transform: translateY(-20%); 
     }
 
-    @include respond(large3){
+    @include respond(large3) {
       transform: translateY(-25%); 
     }
 
-    @include respond(medium){
+    @include respond(medium) {
       transform: translateY(0);
     }
   }
@@ -58,49 +57,49 @@
   &__plan {
     grid-column: col-start 7/ middle-end; 
 
-    @include respond(large2){
-      padding:1rem 1rem 2rem 0rem;
+    @include respond(large2) {
+      padding: 1rem 1rem 2rem 0rem;
     }
 
-    @include respond(medium){
+    @include respond(medium) {
       padding: 3rem 0;
     }
   }
 
   &__locations {
-    grid-column: middle-start /col-end 4;
-    grid-row:2/3;
     text-align: right;
-    padding-left:1rem;
-
-    @include respond(large2){
-      padding:2rem 0rem 2rem 1rem;
-    }
-
-    @include respond(medium){
-      grid-row:auto;
-      text-align: center;
-      padding:3rem 0 0 0;
-      order:1;
-    }
+    padding-left: 1rem;
+    grid-column: middle-start /col-end 4;
+    grid-row: 2/3;
     
+    @include respond(large2) {
+      padding: 2rem 0rem 2rem 1rem;
+    }
+
+    @include respond(medium) {
+      text-align: center;
+      padding: 3rem 0 0 0;
+      grid-row: auto;
+      order: 1;
+    } 
   }
 
-  &__image-box--2{
+  &__image-box--2 {
     grid-column: col-start 7/ full-end;
     transform: translateY(10%);
-    @include respond(large2){
+
+    @include respond(large2) {
       transform: translateY(20%); 
     }
 
-    @include respond(medium){
+    @include respond(medium) {
       transform: none;
     }
   }
 
   &__img{
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
 
     &--1 {
       box-shadow: $box-shadow-right;
@@ -110,13 +109,13 @@
       box-shadow: $box-shadow-left;
     }
 
-    @include respond(medium){
-      box-shadow:none;
-      border:10px solid $color-orange;
+    @include respond(medium) {
+      box-shadow:n one;
+      border: 10px solid $color-orange;
     }
 
-    @include respond(small){
-      border:none;
+    @include respond(small) {
+      border: none;
     }
   } 
 }

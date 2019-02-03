@@ -1,9 +1,9 @@
 .blog-grid-container {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color:$color-black;
+  background-color: $color-black;
   
-  @include respond(large3){
-    display:block;
+  @include respond(large3) {
+    display: block;
   }
 }

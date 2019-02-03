@@ -5,37 +5,34 @@
 
   grid-column: 5 / -1;
   
-  @include respond(large){
+  @include respond(large) {
+    margin-left: 10%;
     grid-column: 6/ -1;
-    margin-left:10%;
   }
 
-  @include respond(large3){
-    margin:0;
-    order:4;
-    padding:2rem 0;
+  @include respond(large3) {
+    margin: 0;
+    padding: 2rem 0;
   }
 
   &__img-box { 
-    margin-left:32px;
+    margin-left: 32px;
 
-    @include respond(large3){
-      left:0;
-      width:80%;
-      margin:0 auto;
+    @include respond(large3) {
+      width: 80%;
+      left: 0;
+      margin: 0 auto;
     }
   }
 
   &__img {
     width: 100%;
+    display: block;
     box-shadow: -37px 37px 0px -5px $color-orange;
-    object-fit: cover;
-    display:block;
 
-    @include respond(large3){
-      box-shadow:none;
-      width:100%;
-     
+    @include respond(large3) {
+      box-shadow: none;
+      width: 100%;
     }
   }
 
@@ -44,10 +41,9 @@
     border-bottom: 5px solid $color-orange;
     padding: 6rem 15%;
 
-    @include respond(large3){
-      border:none;
-      padding:2rem 10%;
-       
+    @include respond(large3) {
+      border: none;
+      padding: 2rem 10%;
     }
   }
 
@@ -56,14 +52,14 @@
   }
 
   &__date {
-    color: $color-orange;
     font-size: 1.75rem;
     margin-top:.5rem;
+    color: $color-orange;
   }
 
   &__text {
     &:last-child {
-      margin-bottom :0;
+      margin-bottom : 0;
     }
   }
 }
