@@ -100,9 +100,4 @@
   }
 }
 
-.comment-form {
-  @include respond(small2) {
-    border-top: 1px dashed $color-white;
-  }
-}
 
