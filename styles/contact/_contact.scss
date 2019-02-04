@@ -97,11 +97,11 @@
   }
 
   &__text {
-    font-size: 1.4rem;
+    font-size: 1.95rem;
     margin: 0;
     
     @include respond(medium) {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
 
       &:not(:last-child) {
         margin-right: 1rem;
@@ -142,7 +142,7 @@
   }
 
   @include respond(medium) {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     border: 5px solid $color-white;
     box-shadow: none;
@@ -150,12 +150,10 @@
   }
 
   @include respond(small2) {
-    width: 100%;
-    padding: 2rem 1rem;
+    border: 3px solid $color-white;
+    padding: 2rem .5rem;
+  
     transform: translate(0);
-    border: none;
-    border-bottom: 1px dashed $color-white;
-    border-top: 1px dashed $color-white;
   }
   
   &__input {  

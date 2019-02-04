@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css type="text/css">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">  
   <link href="https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One" rel="stylesheet"> 
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <title>Bar-One</title>
 </head>
 <body>
-  
+  <a href="#main" class="skip-link">Skip to Main Content</a>
   <!-- HEADER START -->
   <header class="header header--home">
-    <input type="checkbox" class="checkbox-nav" id="checkbox-nav">
-    <label for="checkbox-nav" class="checkbox-nav__label">
+    <input type="checkbox" class="checkbox-nav" id="checkbox-nav" tabindex="0" aria-label="Mobile Login Menu" >
+    <label for="checkbox-nav" class="checkbox-nav__label" >
       <span class="checkbox-nav__icon"></span>
     </label>
 
@@ -44,15 +44,19 @@
       </ul>
     </nav>
 
-    <h1 class="header__heading"><span class="header__heading--large">Bar-One</span>Place to be is</h1>
+    <h1 class="header__heading header__heading--home">
+      <span class="header__heading--large">Bar-One</span>Place to be is
+    </h1>
 
     <div class="header__img-box">
-      <img src="images/header-box.jpg" alt="A black and white photo of wine glasses hanging from the ceiling rack." class="header__img">
+      <img src="images/header-box.jpg" 
+        alt="A black and white photo of wine glasses hanging from the ceiling rack." 
+        class="header__img">
     </div>
   </header>
   <!-- HEADER END -->
   <!-- MAIN START -->
-  <main>
+  <main id="main">
     <!-- FEATURES START -->
     <section class="features">
       <div class="wrapper">

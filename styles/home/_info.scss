@@ -52,6 +52,14 @@
     @include respond(medium) {
       transform: translateY(0);
     }
+
+    @include respond(medium2) {
+      padding: 0 1rem;
+    }
+
+    @include respond(small) {
+      padding: 0 .5rem;
+    }
   }
 
   &__plan {
@@ -95,6 +103,14 @@
     @include respond(medium) {
       transform: none;
     }
+
+    @include respond(medium2) {
+      padding: 0 1rem;
+    }
+
+    @include respond(small) {
+      padding: 0 .5rem;
+    }
   }
 
   &__img{
@@ -115,7 +131,7 @@
     }
 
     @include respond(small) {
-      border: none;
+      border: 5px solid $color-orange;
     }
   } 
 }

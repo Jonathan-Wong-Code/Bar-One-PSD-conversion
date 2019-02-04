@@ -13,6 +13,7 @@
   <title>Bar-One Contact</title>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
    <!-- HEADER START -->
    <header class="header header--contact">
       <input type="checkbox" class="checkbox-nav" id="checkbox-nav">
@@ -43,10 +44,10 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__heading--contact heading-1">Get in Touch</h1>
+      <h1 class="header__heading header__heading--contact heading-1">Get in Touch</h1>
     </header>
     <!-- HEADER END -->
-    <main>
+    <main id="main">
     <!-- MAIN START -->
       <div class="contact-flex-container">
         <section class="contact">
@@ -56,25 +57,29 @@
               <ul class="contact__icon-box">
                 <li class="contact__icon-item">
                   <a href="" class="contact__icon-link">
-                    <i class="fab fa-facebook-f contact__icon"></i>
+                    <span class="visuallyhidden">Go to Bar-One's Facebook</span>
+                    <i class="fab fa-facebook-f contact__icon" aria-hidden></i>
                   </a>
                 </li>
               
                 <li class="contact__icon-item">
                   <a href="" class="contact__icon-link">
-                    <i class="fab fa-instagram contact__icon"></i>
+                      <span class="visuallyhidden">Go to Bar-One's Instagram</span>
+                    <i class="fab fa-instagram contact__icon" aria-hidden></i>
                   </a>
                 </li>
 
                 <li class="contact__icon-item">
                   <a href="" class="contact__icon-link">
-                    <i class="fab fa-twitter contact__icon"></i>
+                      <span class="visuallyhidden">Go to Bar-One's Twitter</span>
+                    <i class="fab fa-twitter contact__icon" aria-hidden></i>
                   </a>
                 </li>
 
                 <li class="contact__icon-item">
                   <a href="" class="contact__icon-link">
-                    <i class="fab fa-whatsapp contact__icon"></i>
+                      <span class="visuallyhidden">Go to Bar-One's WhatApp</span>
+                    <i class="fab fa-whatsapp contact__icon" aria-hidden></i>
                   </a>
                 </li>             
               </ul>   
@@ -94,12 +99,12 @@
         <section class="contact-form">
           <form action="#" method="POST" class="form">
             <label for="comment-name" class="visuallyhidden">Name</label>
-            <input type="input" class="form__input contact-form__input" name="comment-name" id="comment-name" placeholder="Name"> 
+            <input type="input" class="form__input contact-form__input" name="name" id="comment-name" placeholder="Name"> 
              
             <label for="comment-email"  class="visuallyhidden">Email address</label>
-            <input type="email" class="form__input contact-form__input" name="comment-email"        id="comment-email" placeholder="Email address">   
+            <input type="email" class="form__input contact-form__input" name="email"        id="comment-email" placeholder="Email address">   
             
-            <textarea name="" id="" cols="20" rows="3" class="form__comment contact-form__comment" placeholder="Message"></textarea>
+            <textarea name="comment" id="" cols="20" rows="3" class="form__comment contact-form__comment" placeholder="Message"></textarea>
             <input type="submit" class="btn form__submit" value="Post Comment">
           </form>
         </section>
