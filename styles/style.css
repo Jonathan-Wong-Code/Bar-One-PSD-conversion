@@ -301,9 +301,6 @@ a {
     border: 1px solid #fff; }
   .form__submit {
     grid-column: 1/-1; }
-  .form__submit:focus {
-    border: 1px solid #fff;
-    background-color: #220303; }
 
 /** UTILITY CLASSES **/
 .visuallyhidden:not(:focus):not(:active) {
@@ -1158,7 +1155,18 @@ a {
       .mission__text {
         width: 100%; } }
   .mission__link {
-    color: #ff8327; }
+    color: #ff8327;
+    display: inline-block;
+    -webkit-transition: color .3s, -webkit-transform .3s;
+    transition: color .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, color .3s;
+    transition: transform .3s, color .3s;
+    transition: transform .3s, color .3s, -webkit-transform .3s; }
+    .mission__link:hover, .mission__link:focus {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      color: #ffa05a; }
   .mission__post-list {
     font-size: 1rem;
     padding-left: 1.5rem;
@@ -1520,5 +1528,3 @@ a {
       font-size: 1.4rem; }
     .contact-form__comment::placeholder {
       font-size: 1.4rem; }
-  .contact-form__submit {
-    grid-column: 1/-1; }

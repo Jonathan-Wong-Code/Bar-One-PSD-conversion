@@ -116,6 +116,13 @@
 
   &__link {
     color: $color-orange;
+    display: inline-block;
+    transition: transform .3s, color .3s;
+
+    &:hover, &:focus {
+      transform: scale(1.1);
+      color:lighten($color-orange,10);
+    }
   }
 
   &__post-list {
