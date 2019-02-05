@@ -145,8 +145,13 @@
   &__post-link {
     font-size: 1.95rem;
     padding-left: .6rem;
+    display:inline-block;
     color: $color-white;
     
+    &:hover, &:focus {
+      color:$color-orange;
+    }
+
     @include respond(large2) {
       font-size: 1.8rem;
     }

@@ -90,6 +90,13 @@
   &__icon-link {
     font-size: 1.2rem;
     color: $color-white;
+    display:block;
+    transition: transform .3s, color .3s;
+    
+    &:hover, &:focus {
+      transform: scale(1.2);
+      color:$color-orange;
+    }
   }
 
   &__text {

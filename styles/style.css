@@ -1181,7 +1181,10 @@ a {
   .mission__post-link {
     font-size: 1.95rem;
     padding-left: .6rem;
+    display: inline-block;
     color: #fff; }
+    .mission__post-link:hover, .mission__post-link:focus {
+      color: #ff8327; }
     @media only screen and (max-width: 87.5em) {
       .mission__post-link {
         font-size: 1.8rem; } }
@@ -1190,17 +1193,17 @@ a {
         font-size: 1.6rem;
         padding-left: 0; } }
 
-#main--blog {
+.main--blog {
   margin-left: 10%;
   margin-bottom: 4rem;
   margin-top: -15%;
   grid-column: 5 / -1; }
   @media only screen and (max-width: 101.25em) {
-    #main--blog {
+    .main--blog {
       margin-left: 10%;
       grid-column: 6/ -1; } }
   @media only screen and (max-width: 72.5em) {
-    #main--blog {
+    .main--blog {
       margin: 0;
       padding: 2rem 0; } }
 
@@ -1432,7 +1435,18 @@ a {
     margin-right: .7rem; }
   .contact__icon-link {
     font-size: 1.2rem;
-    color: #fff; }
+    color: #fff;
+    display: block;
+    -webkit-transition: color .3s, -webkit-transform .3s;
+    transition: color .3s, -webkit-transform .3s;
+    -o-transition: transform .3s, color .3s;
+    transition: transform .3s, color .3s;
+    transition: transform .3s, color .3s, -webkit-transform .3s; }
+    .contact__icon-link:hover, .contact__icon-link:focus {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      color: #ff8327; }
   .contact__text {
     font-size: 1.95rem;
     margin: 0; }
