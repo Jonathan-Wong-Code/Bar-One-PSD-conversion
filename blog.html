@@ -10,10 +10,11 @@
   <title>Bar-One Blog</title>
 </head>
 <body> 
-  <a href="#main" class="skip-link">Skip to Main Content</a>
+  <a href="#main--blog" class="skip-link">Skip to Main Content</a>
   <!-- HEADER START -->
   <header class="header header--blog">
-    <input type="checkbox" class="checkbox-nav" id="checkbox-nav">
+    <input type="checkbox" class="checkbox-nav" id="checkbox-nav" 
+      tabindex="0" aria-label="Mobile Login Menu">
     <label for="checkbox-nav" class="checkbox-nav__label">
       <span class="checkbox-nav__icon"></span>
     </label>
@@ -44,46 +45,45 @@
     <h1 class="header__heading header__heading--blog heading-1">Blog</h1>
   </header>
   <!-- HEADER END -->
-  <!-- MAIN START -->
-  <main id="main">
-    <div class="blog-grid-container">
-      <!-- MISSION SECTION START -->
-      <aside class="mission">
-        <div class="mission__img-box">
-          <img src="images/sidebar-image.jpg" 
-            alt="A hand holding an almost full beer under a tap."
-            class="mission__img">
-        </div>
+  <!-- GRID CONTAINER START -->
+  <div class="blog-grid-container">
+    <!-- MISSION ASIDE START -->
+    <aside class="mission">
+      <div class="mission__img-box">
+        <img src="images/sidebar-image.jpg" 
+          alt="A hand holding an almost full beer under a tap."
+          class="mission__img">
+      </div>
 
-        <div class="mission__content">
-          <h2 class="mission__heading heading-2">Our mission</h2>
-          <p class="mission__text">
-              Nam dopibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum 
-              <a href="#" class="mission__link">Find out more.</a>
-          </p>
+      <div class="mission__content">
+        <h2 class="mission__heading heading-2">Our mission</h2>
+        <p class="mission__text">
+            Nam dopibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum 
+            <a href="#" class="mission__link">Find out more.</a>
+        </p>
 
-          <h2 class="mission__heading mission__heading--posts heading-2">Recent Posts</h2>
+        <h2 class="mission__heading mission__heading--posts heading-2">Recent Posts</h2>
 
-          <ul class="mission__post-list">
-            <li class="mission__post">
-              <a href="" class="mission__post-link">Donic facilisis tortor ut</a>
-            </li>
-            
-            <li class="mission__post">
-              <a href="" class="mission__post-link">Augue Lacinia at Vivera</a>
-            </li>
+        <ul class="mission__post-list">
+          <li class="mission__post">
+            <a href="" class="mission__post-link">Donic facilisis tortor ut</a>
+          </li>
+          
+          <li class="mission__post">
+            <a href="" class="mission__post-link">Augue Lacinia at Vivera</a>
+          </li>
 
-            <li class="mission__post">
-              <a href="" class="mission__post-link">Semper sed sapien metus</a>
-            </li>
+          <li class="mission__post">
+            <a href="" class="mission__post-link">Semper sed sapien metus</a>
+          </li>
 
-            <li class="mission__post">
-              <a href="" class="mission__post-link">Scelerisque nec pharetra id</a>
-            </li>
-          </ul> 
-        </div>
-      </aside>
-
+          <li class="mission__post">
+            <a href="" class="mission__post-link">Scelerisque nec pharetra id</a>
+          </li>
+        </ul> 
+      </div>
+    </aside>
+    <main id="main--blog">
       <section class="blog-post">
         <!-- BlOG POST IMAGE START -->
         <div class="blog-post__img-box">
@@ -165,51 +165,33 @@
 
           <!-- COMMENT FORM START -->
           <form action="#" method="POST" class="form comment-form">   
-            <label for="comment-name" class="visuallyhidden">Name</label>
-            <input type="input" class="form__input" name="name" id="comment-name"
+            <label for="comment-form__name" class="visuallyhidden">Name</label>
+            <input type="input" class="form__input" name="name" id="comment-form__name"
               placeholder="Name">
                   
-            <label for="comment-email"  class="visuallyhidden">Email address</label>
-            <input type="email" class="form__input" name="email" id="comment-email"
+            <label for="comment-form__email"  class="visuallyhidden">Email address</label>
+            <input type="email" class="form__input" name="email" id="comment-form__email"
               placeholder="Email address">
-              
-            <textarea name="" id="comment-textarea" cols="20" rows="3" class="form__comment" 
+
+            <label for="comment-form__submit">Enter comment</label>
+            <textarea name="" id="comment-form__comment" cols="20" rows="3" class="form__comment" 
               placeholder="Comment" name="comment"></textarea>
 
-            <input type="submit" class="btn form__submit" value="Post Comment" id="comment-submit">
+            <input type="submit" class="btn form__submit" value="Post Comment" id="comment-form__submit">
           </form>
-        </section>
-          <!-- COMMENT SECTION END -->
+        </section>   
       </section>
-      <!-- BLOG POST SECTION END -->
-    </div>
-  </main>
-  <!-- END MAIN -->
-
+    </main>
+  <!-- MAIN END -->
+  </div>
+    <!-- GRID CONTAINER END -->
   <!-- FOOTER START -->
   <footer class="footer">
     <p class="footer__copyright">Copyright &copy; 2019 HackerYou</p>
   </footer>
   <!-- FOOTER END -->
-
   <script src="js/script.js"></script>
+  <script src="js/blog.js"></script>
 </body>
 </html>
 
-<!-- Questions  -->
-
-<!-- Big lettering Waiting for answer-->
-<!-- Where to put main styles for blog  need answer -->
-
-<!-- FATIMA QUESTIONS -->
-<!-- Ask about negative margins on blog...transforms move it up too much -->
-<!-- Using grid/flex order -->
-<!-- accessiblity aria hidden? --> 
-<!-- icons -->
-<!-- CONTACT PAGE -->
-
-<!-- Put borders on pictures -->
-<!-- Padding on border pictures -->
-<!-- keep borders on contact form -->
-<!-- differentiate photos in info section -->
-<!-- maybe make header a bit smaller on mobile -->

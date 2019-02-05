@@ -1,17 +1,17 @@
 .contact{
-  background-color: $color-black;
-  margin-left: 10%;
   width: 30%;
+  margin-left: 10%;
   display: flex;
   align-items: center;
-  
+  background-color: $color-black;
+
   @include respond(medium) {
-    order: 1;
     width: 100%;
     margin-left: 0;
-    justify-content: center;
     padding-top: 2rem;
+    justify-content: center;
     align-items: start;
+    order: 1;
   }
 
   @include respond(small2) {
@@ -88,12 +88,8 @@
   }
 
   &__icon-link {
+    font-size: 1.2rem;
     color: $color-white;
-    font-size: .9rem;
-
-    @include respond(medium) {
-      font-size: 1rem;
-    }
   }
 
   &__text {
@@ -123,7 +119,6 @@
 
     @include respond(medium) {
       margin: 0;
-      font-size: 1.6rem;
     }
   }
 }
@@ -152,7 +147,6 @@
   @include respond(small2) {
     border: 3px solid $color-white;
     padding: 2rem .5rem;
-  
     transform: translate(0);
   }
   

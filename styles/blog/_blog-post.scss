@@ -1,4 +1,4 @@
-.blog-post {
+#main--blog {
   margin-left: 10%;
   margin-bottom: 4rem;
   margin-top: -15%;
@@ -14,6 +14,24 @@
     margin: 0;
     padding: 2rem 0;
   }
+}
+
+.blog-post {
+  // margin-left: 10%;
+  // margin-bottom: 4rem;
+  // margin-top: -15%;
+
+  // grid-column: 5 / -1;
+  
+  // @include respond(large) {
+  //   margin-left: 10%;
+  //   grid-column: 6/ -1;
+  // }
+
+  // @include respond(large3) {
+  //   margin: 0;
+  //   padding: 2rem 0;
+  // }
 
   &__img-box { 
     margin-left: 32px;

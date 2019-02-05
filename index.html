@@ -12,11 +12,12 @@
   <title>Bar-One</title>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to Main Content</a>
+  <a href="#main--home" class="skip-link">Skip to Main Content</a>
   <!-- HEADER START -->
   <header class="header header--home">
-    <input type="checkbox" class="checkbox-nav" id="checkbox-nav" tabindex="0" aria-label="Mobile Login Menu" >
-    <label for="checkbox-nav" class="checkbox-nav__label" >
+    <input type="checkbox" class="checkbox-nav" id="checkbox-nav" 
+      tabindex="0" aria-label="Mobile Login Menu Press Space to Open">
+    <label for="checkbox-nav" class="checkbox-nav__label">
       <span class="checkbox-nav__icon"></span>
     </label>
 
@@ -56,14 +57,14 @@
   </header>
   <!-- HEADER END -->
   <!-- MAIN START -->
-  <main id="main">
+  <main id="main--home">
     <!-- FEATURES START -->
     <section class="features">
       <div class="wrapper">
         <ul class="features__list">
           <li class="feature">
             <div class="feature__icon">
-              <i class="fas fa-home"></i>
+              <i class="fas fa-home" aria-hidden></i>
             </div>
             <h2 class="feature__heading heading-2">New space</h2>
             <p class="feature__text">Ut felis eros vehicula eu magna nec, laoreet blandit
@@ -72,7 +73,7 @@
 
           <li class="feature">
             <div class="feature__icon">
-              <i class="fas fa-users"></i>
+              <i class="fas fa-users" aria-hidden></i>
             </div>
             <h2 class="feature__heading heading-2">Community</h2>
             <p class="feature__text">Ut felis eros vehicula eu magna nec, laoreet blandit
@@ -81,7 +82,7 @@
 
           <li class="feature">
             <div class="feature__icon">
-              <i class="fas fa-file"></i>
+              <i class="fas fa-file" aria-hidden></i>
             </div>
             <h2 class="feature__heading heading-2">Blog</h2>
             <p class="feature__text">Ut felis eros vehicula eu magna nec, laoreet blandit
@@ -90,7 +91,7 @@
 
           <li class="feature">
             <div class="feature__icon">
-              <i class="fas fa-phone"></i>
+              <i class="fas fa-phone" aria-hidden></i>
             </div>
             <h2 class="feature__heading heading-2">Get in Touch</h2>
             <p class="feature__text">Ut felis eros vehicula eu magna nec, laoreet blandit
@@ -99,7 +100,8 @@
         </ul>
       </div>  
     </section>
-    <!-- Location start -->
+
+    <!-- INFO START -->
     <section class="info">
       <div class="info__image-box--1">
         <img src="../images/left-image.jpg" alt="A picture of a modern looking bar with many light bulbs hanging and a selection of drinks and cocktail glasses on the back shelf." class="info__img info__img--1">
@@ -142,7 +144,6 @@
 
     <!-- BANNER START -->
     <section class="banner">
-      <!-- <img src="../images/banner-image.jpg" alt="A close up picture of abeer at the front of the beer." class="banner__img"> -->
     </section>
 
     <!-- EVENTS START -->
