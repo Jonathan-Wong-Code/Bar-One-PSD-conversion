@@ -604,9 +604,6 @@ img {
     background: #111010;
     border: 2px solid currentColor;
     border-radius: 50%;
-    -webkit-transition: .3s color, .3s transform;
-    -o-transition: .3s color, .3s transform;
-    transition: .3s color, .3s transform;
     cursor: pointer; }
     @media only screen and (max-width: 62.5em) {
       .checkbox-nav__label {
@@ -623,9 +620,9 @@ img {
     transform: translate(-50%, -50%);
     background: currentColor;
     color: currentColor;
-    -webkit-transition: .2s all;
-    -o-transition: .2s all;
-    transition: .2s all; }
+    -webkit-transition: .1s all;
+    -o-transition: .1s all;
+    transition: .1s all; }
     .checkbox-nav__icon::before, .checkbox-nav__icon::after {
       content: "";
       height: 2px;

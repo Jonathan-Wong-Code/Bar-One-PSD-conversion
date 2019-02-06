@@ -252,8 +252,6 @@
     background: $color-black;
     border: 2px solid currentColor;
     border-radius: 50%;
-
-    transition: .3s color, .3s transform;
     
     cursor: pointer;
 
@@ -275,8 +273,7 @@
     
     background: currentColor;
     color:currentColor;
-
-    transition:.2s all;
+    transition: .1s all;
 
     &::before, &::after {
       content: "";
