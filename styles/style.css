@@ -291,8 +291,8 @@ img {
     border-bottom: 1px solid #ff8327;
     color: #fff;
     background: none; }
-  .form__input:focus-within {
-    background-color: #2b2929;
+  .form__input:focus {
+    background-color: #220303;
     border: 1px solid #fff; }
   .form__comment {
     padding: 1rem 1.9rem;
@@ -300,8 +300,8 @@ img {
     color: #fff;
     background: none;
     grid-column: 1/-1; }
-  .form__comment:focus-within {
-    background-color: #2b2929;
+  .form__comment:focus {
+    background-color: #220303;
     border: 1px solid #fff; }
   .form__submit {
     grid-column: 1/-1; }
@@ -1327,6 +1327,9 @@ img {
       .comment__comment:last-child {
         margin-bottom: 3rem; } }
 
+.comment-form:focus-within {
+  background: #390505; }
+
 .contact {
   width: 30%;
   margin-left: 10%;
@@ -1473,6 +1476,9 @@ img {
   -webkit-transform: translateY(-25%);
   -ms-transform: translateY(-25%);
   transform: translateY(-25%); }
+  .contact-form:focus-within {
+    background: #390505;
+    border: 5px solid white; }
   @media only screen and (max-width: 87.5em) {
     .contact-form {
       margin-right: 8%;

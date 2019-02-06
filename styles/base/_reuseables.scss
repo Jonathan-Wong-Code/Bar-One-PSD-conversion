@@ -51,7 +51,7 @@
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 2.5rem;
   grid-column-gap: 5%;
-
+  
   @include respond(medium2) {
     grid-template-columns: 1fr;
     grid-column-gap: 0;
@@ -71,8 +71,8 @@
     background: none; 
   }
 
-  &__input:focus-within {
-    background-color: lighten($color-black, 10);
+  &__input:focus {
+    background-color: $color-red-dark;
     border: 1px solid $color-white;
   }
 
@@ -84,8 +84,8 @@
     grid-column: 1/-1;
   }
 
-  &__comment:focus-within{
-    background-color: lighten($color-black, 10);
+  &__comment:focus{
+    background-color: $color-red-dark;
     border: 1px solid $color-white;
   }
 

@@ -136,6 +136,11 @@
   box-shadow: $box-shadow-right;
   transform: translateY(-25%);
 
+  &:focus-within {
+    background: lighten($color-red-dark,5);
+    border:5px solid white;
+  }
+
   @include respond(large2) {
     margin-right: 8%;
     transform: translateY(-20%);
