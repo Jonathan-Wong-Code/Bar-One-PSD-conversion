@@ -293,8 +293,8 @@
     } 
   }
 
-  &:focus + label{
-   color: $color-orange;
+  &:focus + label, &:active + label{
+   color:$color-orange;
    transform: scale(1.1);
   }
 
@@ -304,6 +304,10 @@
     transform: scale(1);
     opacity: 1;  
   } 
+
+  &:checked ~ label {
+    color:$color-orange;
+  }
 
   &:checked ~ .header-nav .header-nav__item {
     display: block;

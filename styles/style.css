@@ -635,7 +635,7 @@ img {
       top: 12px; }
     .checkbox-nav__icon::after {
       bottom: 12px; }
-  .checkbox-nav:focus + label {
+  .checkbox-nav:focus + label, .checkbox-nav:active + label {
     color: #ff8327;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -645,6 +645,8 @@ img {
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1; }
+  .checkbox-nav:checked ~ label {
+    color: #ff8327; }
   .checkbox-nav:checked ~ .header-nav .header-nav__item {
     display: block; }
   .checkbox-nav:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 1) {
