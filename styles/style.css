@@ -256,7 +256,8 @@ img {
   transition: transform .2s, box-shadow .4s;
   transition: transform .2s, box-shadow .4s, -webkit-transform .2s, -webkit-box-shadow .4s;
   color: #fff;
-  background-color: #bf2603; }
+  background-color: #bf2603;
+  cursor: pointer; }
   .btn:hover, .btn:focus {
     -webkit-transform: translateY(-2px);
     -ms-transform: translateY(-2px);

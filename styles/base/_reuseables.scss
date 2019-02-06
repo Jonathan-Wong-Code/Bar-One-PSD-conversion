@@ -31,9 +31,13 @@
   letter-spacing: 3px;
   padding: .4rem 2rem;
   border: none;
+  
   transition: transform .2s, box-shadow .4s;
+
   color: $color-white;
   background-color: $color-red;
+
+  cursor:pointer;
 
   &:hover, &:focus {
     transform: translateY(-2px);

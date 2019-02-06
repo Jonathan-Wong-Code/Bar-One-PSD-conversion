@@ -1,9 +1,9 @@
 document.querySelector(".comment-form").addEventListener("submit", (e)=>{
   e.preventDefault();
-  formControl(e);
+  form(e);
 })
 
-const formControl = (e) =>{ 
+const form = (e) =>{ 
   const name = e.target.elements.name.value;
   const email = e.target.elements.email.value;
   const comment = document.querySelector(".form__comment").value;
@@ -13,11 +13,11 @@ const formControl = (e) =>{
   } else if(!email){
     alert("Enter in an email address")
   } else {
-    renderComment(name, comment);
+    render(name, comment);
   }
 }
 
-const renderComment = (name, comment) => {
+const render = (name, comment) => {
 
   const now = new Date();
   const markup =`
