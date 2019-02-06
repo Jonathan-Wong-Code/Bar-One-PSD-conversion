@@ -123,7 +123,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: '';
+  content: "";
   clear: both;
   height: 0; }
 
@@ -217,6 +217,10 @@ ul {
 
 a {
   text-decoration: none; }
+
+img {
+  width: 100%;
+  display: block; }
 
 /** TYPOGRAPHY **/
 .heading-1 {
@@ -443,9 +447,6 @@ a {
     @media only screen and (max-width: 72.5em) {
       .header__img-box {
         display: none; } }
-  .header__img {
-    display: block;
-    width: 100%; }
   .header--blog {
     -ms-grid-rows: 80vh;
     grid-template-rows: 80vh;
@@ -491,9 +492,10 @@ a {
   justify-self: center;
   -ms-grid-row-align: start;
   align-self: start;
-  -webkit-transition: .5s transform, 1s opacity;
-  -o-transition: .5s transform, 1s opacity;
-  transition: .5s transform, 1s opacity;
+  z-index: 100;
+  -webkit-transition: .5s transform, 2s opacity;
+  -o-transition: .5s transform, 2s opacity;
+  transition: .5s transform, 2s opacity;
   opacity: 0;
   -webkit-animation: fadeIn 1s .5s;
   animation: fadeIn 1s .5s;
@@ -583,6 +585,50 @@ a {
 /** CHECKBOX NAV and MOBILE MENU OPENING**/
 .checkbox-nav {
   opacity: 0; }
+  .checkbox-nav__label {
+    height: 3rem;
+    width: 3rem;
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 105;
+    background: #111010;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    -webkit-transition: .3s color, .3s transform;
+    -o-transition: .3s color, .3s transform;
+    transition: .3s color, .3s transform;
+    cursor: pointer; }
+    @media only screen and (max-width: 62.5em) {
+      .checkbox-nav__label {
+        display: block; } }
+  .checkbox-nav__icon {
+    display: block;
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: currentColor;
+    color: currentColor;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all; }
+    .checkbox-nav__icon::before, .checkbox-nav__icon::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: currentColor;
+      display: block;
+      position: absolute; }
+    .checkbox-nav__icon::before {
+      top: 12px; }
+    .checkbox-nav__icon::after {
+      bottom: 12px; }
   .checkbox-nav:focus + label {
     color: #ff8327;
     -webkit-transform: scale(1.1);
@@ -625,52 +671,6 @@ a {
     .checkbox-nav:checked + .checkbox-nav__label .checkbox-nav__icon::before {
       height: 2px;
       width: 2rem; }
-  .checkbox-nav__label {
-    height: 3rem;
-    width: 3rem;
-    display: none;
-    position: fixed;
-    top: 5%;
-    right: 5%;
-    z-index: 105;
-    background: #111010;
-    border: 2px solid currentColor;
-    border-radius: 50%;
-    -webkit-transition: .3s color, .3s transform;
-    -o-transition: .3s color, .3s transform;
-    transition: .3s color, .3s transform;
-    cursor: pointer; }
-    @media only screen and (max-width: 62.5em) {
-      .checkbox-nav__label {
-        display: block; } }
-  .checkbox-nav__label:focus .checkbox-nav__icon {
-    background: #ff8327; }
-  .checkbox-nav__icon {
-    display: block;
-    width: 70%;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background: currentColor;
-    color: currentColor;
-    -webkit-transition: .2s all;
-    -o-transition: .2s all;
-    transition: .2s all; }
-    .checkbox-nav__icon::before, .checkbox-nav__icon::after {
-      content: '';
-      height: 2px;
-      width: 100%;
-      background-color: currentColor;
-      display: block;
-      position: absolute; }
-    .checkbox-nav__icon::before {
-      top: 12px; }
-    .checkbox-nav__icon::after {
-      bottom: 12px; }
 
 .blog-grid-container {
   display: -ms-grid;
@@ -886,23 +886,20 @@ a {
     @media only screen and (max-width: 37.5em) {
       .info__image-box--2 {
         padding: 0 .5rem; } }
-  .info__img {
-    width: 100%;
-    display: block; }
-    .info__img--1 {
-      -webkit-box-shadow: 29px 32px 0px -3px #ff8327;
-      box-shadow: 29px 32px 0px -3px #ff8327; }
-    .info__img--2 {
-      -webkit-box-shadow: -29px 32px 0px -3px #ff8327;
-      box-shadow: -29px 32px 0px -3px #ff8327; }
-    @media only screen and (max-width: 62.5em) {
-      .info__img {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border: 10px solid #ff8327; } }
-    @media only screen and (max-width: 37.5em) {
-      .info__img {
-        border: 5px solid #ff8327; } }
+  .info__img--1 {
+    -webkit-box-shadow: 29px 32px 0px -3px #ff8327;
+    box-shadow: 29px 32px 0px -3px #ff8327; }
+  .info__img--2 {
+    -webkit-box-shadow: -29px 32px 0px -3px #ff8327;
+    box-shadow: -29px 32px 0px -3px #ff8327; }
+  @media only screen and (max-width: 62.5em) {
+    .info__img {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 10px solid #ff8327; } }
+  @media only screen and (max-width: 37.5em) {
+    .info__img {
+      border: 5px solid #ff8327; } }
 
 .party {
   text-align: center;
@@ -989,11 +986,9 @@ a {
     margin-top: 1rem;
     margin-bottom: 2rem; }
   .events__img {
-    width: 100%;
     -webkit-transform: scale(0.92);
     -ms-transform: scale(0.92);
     transform: scale(0.92);
-    display: block;
     -webkit-box-shadow: -29px 32px 0px -3px #ff8327;
     box-shadow: -29px 32px 0px -3px #ff8327; }
     @media only screen and (max-width: 62.5em) {
@@ -1040,9 +1035,6 @@ a {
         .gallery__img-box:not(:last-child) {
           margin-right: 0;
           margin-bottom: 2rem; } }
-  .gallery__img {
-    width: 100%;
-    display: block; }
 
 .mission {
   padding-top: 8rem;
@@ -1094,11 +1086,6 @@ a {
     @media only screen and (max-width: 31.25em) {
       .mission__img-box {
         width: 65%; } }
-  .mission__img {
-    width: 100%;
-    display: block;
-    -o-object-fit: cover;
-    object-fit: cover; }
   .mission__heading {
     margin: 0; }
   .mission__content {
@@ -1170,22 +1157,31 @@ a {
   .mission__post-list {
     font-size: 1rem;
     padding-left: 1.5rem;
-    list-style-position: inside;
-    list-style-type: disc;
-    color: #bf2603; }
+    display: inline-block; }
     @media only screen and (max-width: 72.5em) {
       .mission__post-list {
-        width: 100%;
-        text-align: center;
+        margin: 0 auto;
         padding-left: 0; } }
-    @media only screen and (max-width: 31.25em) {
-      .mission__post-list {
-        padding: 0; } }
-    @media only screen and (max-width: 23.125em) {
-      .mission__post-list {
-        text-align: left; } }
   .mission__post {
-    margin: 0 auto; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media only screen and (max-width: 23.125em) {
+      .mission__post {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; } }
+    .mission__post::before {
+      content: "";
+      display: block;
+      height: 8px;
+      width: 8px;
+      margin-right: .4rem;
+      border-radius: 50%;
+      background-color: #bf2603; }
   .mission__post-link {
     font-size: 1.95rem;
     padding-left: .6rem;
@@ -1224,8 +1220,6 @@ a {
       margin: 0 auto; } }
 
 .blog-post__img {
-  width: 100%;
-  display: block;
   -webkit-box-shadow: -37px 37px 0px -5px #ff8327;
   box-shadow: -37px 37px 0px -5px #ff8327; }
   @media only screen and (max-width: 72.5em) {
@@ -1303,9 +1297,6 @@ a {
         -ms-transform: translateY(0);
         transform: translateY(0);
         margin-bottom: 1rem; } }
-  .comment__img {
-    width: 100%;
-    display: block; }
   .comment__comment-box {
     padding-left: 2.5rem;
     width: 86%; }
@@ -1456,13 +1447,10 @@ a {
       transform: scale(1.2);
       color: #ff8327; }
   .contact__text {
-    font-size: 1.95rem;
     margin: 0; }
     @media only screen and (max-width: 62.5em) {
-      .contact__text {
-        font-size: 1.7rem; }
-        .contact__text:not(:last-child) {
-          margin-right: 1rem; } }
+      .contact__text:not(:last-child) {
+        margin-right: 1rem; } }
     @media only screen and (max-width: 50em) {
       .contact__text {
         margin-bottom: .2rem; }

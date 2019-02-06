@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: [full-start] 1fr [middle-start] 
    repeat(10, [col-start] minmax(min-content, 7rem)[col-end]) [middle-end] 1fr [full-end];
+  // 10 x 7rem = 10 x 140px = 1400px wrapper keeping content centered.
   align-items: center;
   background-color: $color-red-dark;
 
@@ -51,6 +52,7 @@
 
     @include respond(medium) {
       transform: translateY(0);
+      
     }
 
     @include respond(medium2) {
@@ -114,9 +116,6 @@
   }
 
   &__img{
-    width: 100%;
-    display: block;
-
     &--1 {
       box-shadow: $box-shadow-right;
     }

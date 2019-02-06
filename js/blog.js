@@ -1,4 +1,4 @@
-document.querySelector(".comment-form").addEventListener('submit', (e)=>{
+document.querySelector(".comment-form").addEventListener("submit", (e)=>{
   e.preventDefault();
   formControl(e);
 })
@@ -9,9 +9,9 @@ const formControl = (e) =>{
   const comment = document.querySelector(".form__comment").value;
 
   if(!name.match(/^[a-zA-Z]*$/) || !name){
-    alert('Enter valid name');
+    alert("Enter valid name");
   } else if(!email){
-    alert('Enter in an email address')
+    alert("Enter in an email address")
   } else {
     renderComment(name, comment);
   }

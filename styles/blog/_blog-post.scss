@@ -19,7 +19,8 @@
 .blog-post {
 
   &__img-box { 
-    margin-left: 32px;
+    margin-left: 32px; //Aligns box shadow with border from .blog-post__post.
+    //37px width of box shadow substract 5px of the border-top width to get them aligned.
 
     @include respond(large3) {
       width: 80%;
@@ -29,8 +30,6 @@
   }
 
   &__img {
-    width: 100%;
-    display: block;
     box-shadow: -37px 37px 0px -5px $color-orange;
 
     @include respond(large3) {

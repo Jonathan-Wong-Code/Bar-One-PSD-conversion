@@ -2,7 +2,7 @@
   padding-top: 8rem;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  align-items: start;
+  align-items: start; //Takes away the "stretch" default from grid children.
   grid-column: 1/ 5;
 
   @include respond(large) {
@@ -16,10 +16,10 @@
 
   &__img-box { 
    
-    margin-right: 10%;
+    margin-right: 10%; //Margin to give the box-shadow "Illusion"
     transform: translateY(-20px);
 
-    grid-row: 1/2;
+    grid-row: 1/2; //Stack the content and img-box together with Grid.
     grid-column: 1/11;
     z-index: 2; 
     border: none;
@@ -41,20 +41,14 @@
     }  
   }
 
-  &__img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-  }
-
   &__heading {
     margin: 0;
   }
 
   &__content {
     padding: 110% 2rem 2rem 2rem;
-    margin-right: 7%;
-    grid-row: 1/2;
+    margin-right: 7%; //Margin to give the box-shadow "Illusion"
+    grid-row: 1/2; //Stack the content and img-box together with Grid.
     grid-column: 3/11;
     background-color: $color-red-dark;
 
@@ -128,27 +122,32 @@
   &__post-list {
     font-size: 1rem;
     padding-left: 1.5rem;
-    list-style-position: inside;
-    list-style-type: disc;
-    color: $color-red;
+    display:inline-block;
     
-    @include respond(large3) {
-      width: 100%;     
-      text-align: center;   
+    @include respond(large3) {    
+      margin:0 auto;
       padding-left: 0;
-    }
-
-    @include respond(small2) {
-      padding: 0;
-    }
-
-    @include respond(small3) {
-      text-align: left;
     }
   }
   &__post {
-    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    
+    @include respond(small3) {
+      justify-content: flex-start;
+    }
+    
+    &::before { //Before elements used because list-style-type:disc was not rendering in Microsoft Edge.
+      content:"";
+      display:block;
+      height:8px;
+      width:8px;
+      margin-right:.4rem;
+      border-radius:50%;
+      background-color:$color-red;  
+    }
   }
+
   &__post-link {
     font-size: 1.95rem;
     padding-left: .6rem;

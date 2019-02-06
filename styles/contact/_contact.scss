@@ -100,12 +100,10 @@
   }
 
   &__text {
-    font-size: 1.95rem;
+   
     margin: 0;
     
     @include respond(medium) {
-      font-size: 1.7rem;
-
       &:not(:last-child) {
         margin-right: 1rem;
       }
