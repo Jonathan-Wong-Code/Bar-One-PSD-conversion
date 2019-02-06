@@ -26,7 +26,7 @@
       margin:0;
 
       opacity:0;
-      animation: fadeIn 1s 1s;
+      animation: fade-in 1s 1s;
       animation-fill-mode: forwards;
 
       @include respond(medium) {
@@ -111,6 +111,10 @@
       @include respond(large3) {
         transform: translateY(0);
       }
+
+      @include respond(medium){
+        margin-left:0;
+      }
     }
 
     /*** HEADER CONTACT STYLES ***/
@@ -127,6 +131,10 @@
 
     &__heading--contact {
       margin-left: 10%;  
+
+      @include respond(medium){
+        margin-left:0;
+      }
     }
 }
 
@@ -143,7 +151,7 @@
   
   transition: .5s transform, 2s opacity;
   opacity:0;
-  animation: fadeIn 1s .5s;
+  animation: fade-in 1s .5s;
   animation-fill-mode: forwards;
 
   @include respond(large) {
@@ -305,12 +313,12 @@
   }
 
   &:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 1) {
-    animation: fadeInLeft 1s .5s;
+    animation: fade-in-left 1s .5s;
     animation-fill-mode: backwards;
   } 
 
   &:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 2) {
-    animation: fadeInRight 1s .5s;
+    animation: fade-in-right 1s .5s;
     animation-fill-mode: backwards;
   } 
   

@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-@-webkit-keyframes fadeInLeft {
+@-webkit-keyframes fade-in-left {
   0% {
     -webkit-transform: translate(-10rem, 0) scale(0.5);
     transform: translate(-10rem, 0) scale(0.5);
@@ -142,7 +142,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     transform: translate(0rem, 0) scale(1);
     opacity: 1; } }
 
-@keyframes fadeInLeft {
+@keyframes fade-in-left {
   0% {
     -webkit-transform: translate(-10rem, 0) scale(0.5);
     transform: translate(-10rem, 0) scale(0.5);
@@ -152,7 +152,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     transform: translate(0rem, 0) scale(1);
     opacity: 1; } }
 
-@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fade-in-right {
   0% {
     -webkit-transform: translate(10rem, 0) scale(0.5);
     transform: translate(10rem, 0) scale(0.5);
@@ -162,7 +162,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     transform: translate(0rem, 0) scale(1);
     opacity: 1; } }
 
-@keyframes fadeInRight {
+@keyframes fade-in-right {
   0% {
     -webkit-transform: translate(10rem, 0) scale(0.5);
     transform: translate(10rem, 0) scale(0.5);
@@ -172,13 +172,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     transform: translate(0rem, 0) scale(1);
     opacity: 1; } }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fade-in {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0; }
   100% {
@@ -276,6 +276,8 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 2.5rem;
   grid-column-gap: 5%; }
+  .form:focus-within {
+    background: #390505; }
   @media only screen and (max-width: 50em) {
     .form {
       -ms-grid-columns: 1fr;
@@ -378,8 +380,8 @@ img {
     align-self: center;
     margin: 0;
     opacity: 0;
-    -webkit-animation: fadeIn 1s 1s;
-    animation: fadeIn 1s 1s;
+    -webkit-animation: fade-in 1s 1s;
+    animation: fade-in 1s 1s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
     @media only screen and (max-width: 62.5em) {
@@ -466,6 +468,9 @@ img {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0); } }
+    @media only screen and (max-width: 62.5em) {
+      .header__heading--blog {
+        margin-left: 0; } }
   .header--contact {
     -ms-grid-rows: 50vh;
     grid-template-rows: 50vh;
@@ -477,6 +482,9 @@ img {
         grid-template-rows: 70vh; } }
   .header__heading--contact {
     margin-left: 10%; }
+    @media only screen and (max-width: 62.5em) {
+      .header__heading--contact {
+        margin-left: 0; } }
 
 /* HEADER NAV FOR ALL THREE PAGES */
 .header-nav {
@@ -497,8 +505,8 @@ img {
   -o-transition: .5s transform, 2s opacity;
   transition: .5s transform, 2s opacity;
   opacity: 0;
-  -webkit-animation: fadeIn 1s .5s;
-  animation: fadeIn 1s .5s;
+  -webkit-animation: fade-in 1s .5s;
+  animation: fade-in 1s .5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
   @media only screen and (max-width: 101.25em) {
@@ -642,13 +650,13 @@ img {
   .checkbox-nav:checked ~ .header-nav .header-nav__item {
     display: block; }
   .checkbox-nav:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 1) {
-    -webkit-animation: fadeInLeft 1s .5s;
-    animation: fadeInLeft 1s .5s;
+    -webkit-animation: fade-in-left 1s .5s;
+    animation: fade-in-left 1s .5s;
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards; }
   .checkbox-nav:checked ~ .header-nav .header-nav__item:nth-of-type(3n + 2) {
-    -webkit-animation: fadeInRight 1s .5s;
-    animation: fadeInRight 1s .5s;
+    -webkit-animation: fade-in-right 1s .5s;
+    animation: fade-in-right 1s .5s;
     -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards; }
   .checkbox-nav:checked + .checkbox-nav__label .checkbox-nav__icon {
@@ -1327,9 +1335,6 @@ img {
       .comment__comment:last-child {
         margin-bottom: 3rem; } }
 
-.comment-form:focus-within {
-  background: #390505; }
-
 .contact {
   width: 30%;
   margin-left: 10%;
@@ -1361,14 +1366,14 @@ img {
     margin-bottom: 15%; }
     @media only screen and (max-width: 62.5em) {
       .contact__info {
+        margin-bottom: 2rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
-        margin-bottom: 2rem; } }
+        flex-direction: column; } }
     @media only screen and (max-width: 50em) {
       .contact__info {
         -webkit-box-orient: horizontal;
@@ -1387,13 +1392,13 @@ img {
         align-items: center; } }
   @media only screen and (max-width: 62.5em) {
     .contact__top-box {
+      margin-bottom: .5rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-bottom: .5rem;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; } }
@@ -1477,7 +1482,6 @@ img {
   -ms-transform: translateY(-25%);
   transform: translateY(-25%); }
   .contact-form:focus-within {
-    background: #390505;
     border: 5px solid white; }
   @media only screen and (max-width: 87.5em) {
     .contact-form {

@@ -1,4 +1,4 @@
-@keyframes fadeInLeft{
+@keyframes fade-in-left{
 	0%{
 		transform: translate(-10rem,0) scale(.5);
 		opacity: 0;
@@ -10,7 +10,7 @@
 	}
 }
 
-@keyframes fadeInRight{
+@keyframes fade-in-right{
 	0%{
 		transform: translate(10rem,0) scale(.5);
 		opacity: 0;
@@ -23,7 +23,7 @@
 
 }
 
-@keyframes fadeIn{
+@keyframes fade-in{
 	0%{
 		opacity: 0;
 	}

@@ -22,9 +22,9 @@
     margin-bottom: 15%;
 
     @include respond(medium) {
+      margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
-      margin-bottom: 2rem;
     }
 
     @include respond(medium2) {
@@ -40,9 +40,9 @@
 
   &__top-box{
     @include respond(medium) {
+      margin-bottom: .5rem;
       display: flex;
       align-items: center;
-      margin-bottom: .5rem;
       justify-content: center;
     }
 
@@ -137,7 +137,6 @@
   transform: translateY(-25%);
 
   &:focus-within {
-    background: lighten($color-red-dark,5);
     border:5px solid white;
   }
 
