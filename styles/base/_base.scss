@@ -9,7 +9,6 @@ body {
   letter-spacing: 1.9px;
   
   transition: 2s all;
-  opacity: 0; /* Opacity set to 0 and set to 1 on window load with Javascript for fade in effect */
 
   background: $color-black;
   color: $color-white;

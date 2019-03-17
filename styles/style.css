@@ -195,8 +195,6 @@ body {
   -webkit-transition: 2s all;
   -o-transition: 2s all;
   transition: 2s all;
-  opacity: 0;
-  /* Opacity set to 0 and set to 1 on window load with Javascript for fade in effect */
   background: #111010;
   color: #fff; }
   @media only screen and (max-width: 87.5em) {
@@ -327,6 +325,7 @@ img {
   font-size: 3rem;
   font-weight: 700;
   text-decoration: none;
+  opacity: 0;
   position: absolute;
   left: -1000px;
   top: 5px;
@@ -339,7 +338,8 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  opacity: 1; }
 
 .footer {
   padding: .9rem 0;
